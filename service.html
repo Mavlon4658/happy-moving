@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С переездом!</title>
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- City select modal -->
+        <section class="modal city_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="city_modal__head">
+                    <h3>
+                        Выберите город:
+                    </h3>
+                    <button class="modal__close">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="19.3839" height="2" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.6462 4.93945)" fill="#929C91"/>
+                            <rect x="6.354" y="4.93994" width="19.3839" height="2" rx="1" transform="rotate(45 6.354 4.93994)" fill="#929C91"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="city_modal__search">
+                    <input type="text" placeholder="Введите название города...">
+                    <button>
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3943 18.7384L17.3769 15.7454C18.5481 14.285 19.1153 12.4313 18.9619 10.5655C18.8084 8.69978 17.9459 6.96373 16.5518 5.71435C15.1576 4.46497 13.3377 3.79724 11.4664 3.84844C9.59501 3.89965 7.81438 4.66591 6.49064 5.98966C5.16689 7.31341 4.40063 9.09403 4.34942 10.9654C4.29821 12.8368 4.96595 14.6566 6.21533 16.0508C7.4647 17.4449 9.20076 18.3074 11.0665 18.4609C12.9323 18.6144 14.7859 18.0471 16.2463 16.8759L19.2394 19.8689C19.315 19.9451 19.4049 20.0056 19.504 20.0469C19.6032 20.0882 19.7095 20.1095 19.8168 20.1095C19.9242 20.1095 20.0305 20.0882 20.1296 20.0469C20.2287 20.0056 20.3187 19.9451 20.3943 19.8689C20.5409 19.7173 20.6228 19.5146 20.6228 19.3037C20.6228 19.0927 20.5409 18.8901 20.3943 18.7384ZM11.6836 16.8759C10.5576 16.8759 9.45684 16.542 8.52058 15.9164C7.58433 15.2908 6.85461 14.4016 6.4237 13.3613C5.99279 12.321 5.88004 11.1763 6.09972 10.0719C6.3194 8.96753 6.86163 7.95309 7.65785 7.15687C8.45406 6.36065 9.46851 5.81842 10.5729 5.59874C11.6773 5.37907 12.822 5.49181 13.8623 5.92272C14.9026 6.35363 15.7918 7.08335 16.4174 8.01961C17.043 8.95586 17.3769 10.0566 17.3769 11.1826C17.3769 12.6926 16.777 14.1407 15.7093 15.2084C14.6416 16.2761 13.1935 16.8759 11.6836 16.8759Z" fill="#929C91"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="city_modal__search_result">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn_gray active">Москва</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Петропавловск-Камчатский</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Петропавловск-Камчатский</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Петропавловск-Камчатский</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="modal request_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h3>Отправить заявку</h3>
+                <button class="modal__close">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.3839" height="2" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.6462 4.93945)" fill="#929C91"/>
+                        <rect x="6.354" y="4.93994" width="19.3839" height="2" rx="1" transform="rotate(45 6.354 4.93994)" fill="#929C91"/>
+                    </svg>
+                </button>
+                <p>Наши специалисты свяжутся с Вами <br> в ближайшее время.</p>
+                <form action="">
+
+                    <!-- Use classes ['error', 'disabled']. example: class="input error" --> 
+                    <div class="input white">
+                        <input type="text">
+                        <label>Ваше имя</label>
+                        <p class="input_error">Описание ошибки тут</p>
+                    </div>
+
+                    <!-- Use classes ['error', 'disabled']. example: class="input phone error" --> 
+                    <div class="input white phone">
+                        <input type="tel">
+                        <label>Ваш номер телефона</label>
+                        <p class="input_error">Описание ошибки тут</p>
+                    </div>
+
+                    <!-- Use classes ['error', 'disabled']. example: class="checkbox error" -->
+                    <label for="" class="checkbox white">
+                        <input type="checkbox" checked placeholder="">
+                        <span class="checkbox_icon">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.872803 4.20585L3.32691 6.66001C3.40501 6.73812 3.53165 6.73812 3.60975 6.66001L9.19547 1.07422" stroke="#6FBB40" stroke-width="1.3" stroke-linecap="round"/>
+                            </svg>                                    
+                        </span>
+                        <span class="checkbox_text">Даю согласие на обработку персональных данных</span>
+                    </label>
+
+                    <button type="submit" class="btn_green thanks_modal__open">Заказать переезд</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="modal thanks_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h3>Спасибо за вашу заявку!</h3>
+                <button class="modal__close thanks_modal__close">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.3839" height="2" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.6462 4.93945)" fill="#929C91"/>
+                        <rect x="6.354" y="4.93994" width="19.3839" height="2" rx="1" transform="rotate(45 6.354 4.93994)" fill="#929C91"/>
+                    </svg>
+                </button>
+                <p>Наши специалисты свяжутся с Вами <br> в ближайшее время. (либо тут, либо в <br> отправить заявку нужен другой текст)</p>
+                <button class="btn_green modal__close">Закрыть</button>
+            </div>
+        </section>
+
+        <section class="modal is_city_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h3>Ваш город — <br> Петропавловск-Камчатский?!</h3>
+                <div class="btns">
+                    <button class="btn_green">Да</button>
+                    <button class="btn_gray">Нет, другой</button>
+                </div>
+            </div>
+        </section>
+        <!-- City select modal end -->
+
+        <!-- header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <a href="#" class="header__address">
+                        <img src="./images/icons/header__location.svg" alt="">
+                        <span>Петропавловск- <br> Камчатский</span>
+                    </a>
+                </div>
+
+                <ul class="header__nav">
+                    <li class="header__nav_accordion">
+                        <a href="#" class="header__nav_accordion__btn">
+                            Услуги
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5927 6.19279C4.98323 5.80227 5.61639 5.80227 6.00691 6.1928L9.49997 9.68588L12.9931 6.1928C13.3836 5.80227 14.0167 5.80227 14.4073 6.1928C14.7978 6.58332 14.7978 7.21648 14.4073 7.60701L10.2071 11.8072C9.81655 12.1977 9.18338 12.1977 8.79286 11.8072L4.5927 7.60701C4.20217 7.21648 4.20217 6.58332 4.5927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <div class="header__nav_accordion__list">
+                            <ul>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Цены</a>
+                    </li>
+                    <li class="header__nav_accordion">
+                        <a href="#" class="header__nav_accordion__btn">
+                            О компании
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5927 6.19279C4.98323 5.80227 5.61639 5.80227 6.00691 6.1928L9.49997 9.68588L12.9931 6.1928C13.3836 5.80227 14.0167 5.80227 14.4073 6.1928C14.7978 6.58332 14.7978 7.21648 14.4073 7.60701L10.2071 11.8072C9.81655 12.1977 9.18338 12.1977 8.79286 11.8072L4.5927 7.60701C4.20217 7.21648 4.20217 6.58332 4.5927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <div class="header__nav_accordion__list">
+                            <ul>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Отследить груз</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="header__right">
+                    <a href="#">8 (800) 301-47-978</a>
+                    <a href="#">
+                        <img src="./images/icons/header__phone.svg" alt="">
+                        <span>8 (800) 301-47-978</span>
+                    </a>
+                    <div class="work_schedule">Ежедневно c 8:00 до 21:00</div>
+                </div>
+
+                <div class="header__scroll">
+                    <div class="header__scroll_left">
+                        <a href="#">
+                            <img src="./images/icons/phone.svg" alt="">
+                            <span>8 (800) 301-47-978</span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/mb_phone.svg" alt="">
+                            <span>8 (969) 777-83-97</span>
+                        </a>
+                    </div>
+                    <div class="header__scroll_right">
+                        <a href="#" class="btn_green">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00562 7C7.00562 5.89543 7.90105 5 9.00562 5H16.0056C17.1102 5 18.0056 5.89543 18.0056 7V9C18.0056 10.1046 17.1102 11 16.0056 11H9.00562C7.90105 11 7.00562 10.1046 7.00562 9V7ZM9.00562 7H16.0056V9H9.00562V7Z" fill="white"/>
+                                <path d="M9.00562 14C9.00562 14.5523 8.5579 15 8.00562 15C7.45333 15 7.00562 14.5523 7.00562 14C7.00562 13.4477 7.45333 13 8.00562 13C8.5579 13 9.00562 13.4477 9.00562 14Z" fill="white"/>
+                                <path d="M8.00562 19C8.5579 19 9.00562 18.5523 9.00562 18C9.00562 17.4477 8.5579 17 8.00562 17C7.45333 17 7.00562 17.4477 7.00562 18C7.00562 18.5523 7.45333 19 8.00562 19Z" fill="white"/>
+                                <path d="M13.5056 14C13.5056 14.5523 13.0579 15 12.5056 15C11.9533 15 11.5056 14.5523 11.5056 14C11.5056 13.4477 11.9533 13 12.5056 13C13.0579 13 13.5056 13.4477 13.5056 14Z" fill="white"/>
+                                <path d="M12.5056 19C13.0579 19 13.5056 18.5523 13.5056 18C13.5056 17.4477 13.0579 17 12.5056 17C11.9533 17 11.5056 17.4477 11.5056 18C11.5056 18.5523 11.9533 19 12.5056 19Z" fill="white"/>
+                                <path d="M18.0056 14C18.0056 14.5523 17.5579 15 17.0056 15C16.4533 15 16.0056 14.5523 16.0056 14C16.0056 13.4477 16.4533 13 17.0056 13C17.5579 13 18.0056 13.4477 18.0056 14Z" fill="white"/>
+                                <path d="M17.0056 19C17.5579 19 18.0056 18.5523 18.0056 18C18.0056 17.4477 17.5579 17 17.0056 17C16.4533 17 16.0056 17.4477 16.0056 18C16.0056 18.5523 16.4533 19 17.0056 19Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.00562 4C3.00562 2.34315 4.34876 1 6.00561 1H19.0056C20.6625 1 22.0056 2.34315 22.0056 4V20C22.0056 21.6569 20.6625 23 19.0056 23H6.00562C4.34876 23 3.00562 21.6569 3.00562 20V4ZM6.00561 3H19.0056C19.5579 3 20.0056 3.44772 20.0056 4V20C20.0056 20.5523 19.5579 21 19.0056 21H6.00562C5.45333 21 5.00562 20.5523 5.00562 20V4C5.00562 3.44772 5.45333 3 6.00561 3Z" fill="white"/>
+                            </svg>
+                            <span>Рассчитать стоимость</span>
+                        </a>
+                        <a href="#" class="btn_orange request_modal__open">Заказать звонок</a>
+                        <button class="btn_green header__bars">
+                            <img src="./images/icons/bars.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header__scroll_nav">
+                    <ul class="nav_parent">
+                        <li class="nav_accordion">
+                            <a href="#" class="nav_btn">
+                                <span>Услуги</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                                </svg>
+                            </a>
+                            <ul class="accordion_list">
+                                <li>
+                                    <a href="#">Сотрудники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li class="nav_accordion">
+                            <a href="#" class="nav_btn">
+                                <span>О компании</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                                </svg>
+                            </a>
+                            <ul class="accordion_list">
+                                <li>
+                                    <a href="#">Сотрудники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Отследить груз</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__mobile_nav">
+                    <a href="#" class="btn_orange">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2040_3869)">
+                                <path d="M11.1102 5.58492C10.9602 5.1765 10.6596 4.84095 10.27 4.64712C9.88045 4.45329 9.4315 4.41586 9.01523 4.54251C7.04196 5.15093 5.66289 6.84433 5.95899 8.80342C6.29013 10.9778 7.02692 13.0705 8.13101 14.9727C9.22329 16.8705 10.6552 18.5513 12.3554 19.9312C13.8845 21.1683 16.0302 20.8276 17.5431 19.408C17.8614 19.1093 18.0544 18.701 18.0834 18.2656C18.1124 17.8301 17.9751 17.3998 17.6993 17.0616L16.6163 15.7373C16.3994 15.471 16.1075 15.276 15.7784 15.1776C15.4493 15.0793 15.0983 15.0821 14.7708 15.1856L12.2723 15.9766L11.8362 15.5264C11.2868 14.9566 10.8063 14.3242 10.4044 13.6423C10.0144 12.9527 9.71063 12.2178 9.49993 11.4541L9.33161 10.8558L11.2582 9.08126C11.5125 8.8452 11.6908 8.53891 11.7706 8.20129C11.8504 7.86367 11.8281 7.50994 11.7064 7.18504L11.1102 5.58492ZM8.41899 2.60371C9.32989 2.32502 10.3129 2.40523 11.1666 2.82791C12.0202 3.2506 12.6799 3.98375 13.0105 4.87714L13.6047 6.47523C13.8668 7.17733 13.9142 7.94152 13.7409 8.67063C13.5675 9.39974 13.1813 10.0608 12.6312 10.5698L11.6375 11.4845C11.7652 11.8374 11.9376 12.2409 12.1607 12.6323C12.3838 13.0177 12.6434 13.3685 12.8807 13.6545L14.1583 13.2489C14.8726 13.0234 15.6382 13.0174 16.3559 13.2318C17.0736 13.4462 17.7104 13.8711 18.184 14.4515L19.2669 15.7758C19.8688 16.5118 20.1688 17.4488 20.1063 18.3975C20.0438 19.3462 19.6235 20.2358 18.9303 20.8864C16.9144 22.7786 13.6229 23.5635 11.0818 21.507C9.18831 19.9709 7.59344 18.0997 6.37676 15.9867C5.14503 13.8651 4.32294 11.5309 3.95326 9.10559C3.46653 5.87493 5.78458 3.41493 8.41899 2.60574" fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2040_3869">
+                                    <rect width="17.2591" height="23.0122" fill="white" transform="translate(3.36981 1.07324)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Позвонить</span>
+                    </a>
+                    <button class="btn_green mobile_menu_btn">
+                        <img src="./images/icons/bars.svg" alt="">
+                        <img src="./images/icons/menu_close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <section class="mobile_menu">
+            <div class="main_container">
+                <ul class="nav_parent">
+                    <li class="nav_accordion">
+                        <a href="#" class="nav_btn">
+                            <span>Услуги</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <ul class="accordion_list">
+                            <li>
+                                <a href="#">Сотрудники</a>
+                            </li>
+                            <li>
+                                <a href="#">Полезная информация</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Документы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Цены</a>
+                    </li>
+                    <li class="nav_accordion">
+                        <a href="#" class="nav_btn">
+                            <span>О компании</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <ul class="accordion_list">
+                            <li>
+                                <a href="#">Сотрудники</a>
+                            </li>
+                            <li>
+                                <a href="#">Полезная информация</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Документы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Отследить груз</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="line"></div>
+                <a href="#" class="select_country">
+                    <img src="./images/icons/header__location.svg" alt="">
+                    <span>
+                        Ваш город: <span>Петропавловск-Камчатский</span>
+                    </span>
+                    <img src="./images/icons/edit_green.svg" alt="">
+                </a>
+                <div class="line"></div>
+
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/phone.svg" alt="">
+                            <span>8 (800) 301-47-978</span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/mb_phone.svg" alt="">
+                            <span>8 (969) 777-83-97</span>
+                        </a>
+                        <h6>Ежедневно c 8:00 до 21:00</h6>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/address.svg" alt="">
+                            <span>Россия, 413100, Энгельс, ул. Демократическая, д.1, офис 201/1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/email.svg" alt="">
+                            <span>info@s-pereezdom.ru</span>
+                        </a>
+                    </li>
+                    <li class="networks">
+                        <a href="#">
+                            <img src="./images/icons/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/adno.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/tg.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/wb.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="btns">
+                        <a href="#" class="btn_green">Расчет стоимости</a>
+                        <a href="#" class="btn_gray">Заказать звонок</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- header -->
+
+        <main>
+
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs">
+            <div class="main_container">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                    </li>
+                    <li>
+                        <a href="#">Наши услуги</a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                    </li>
+                    <li>
+                        <span class="active">Домашний переезд</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Breadcrumbs end -->
+
+        <!-- Service home -->
+        <div class="service_home">
+            <div class="main_container">
+                <div class="service_home__content">
+                    <h1 class="service_home__title">Домашний <br> <span>переезд</span></h1>
+                    <p class="service_home__description">Краткое описание этой конкретной услуги, строчки на две или в крайнем случае на три, вот она третья строчка.</p>
+                    <img src="./images/service_home_bg.png" alt="" class="service_home__bg">
+                    <a href="#" class="btn_green">Оформить заявку</a>
+                </div>
+            </div>
+        </div>
+        <!-- Servie home end -->
+
+        <!-- Service datas -->
+        <section class="service_data">
+            <div class="main_container">
+                <h2 class="service_data__title">Домашний переезд по всей территории России для частных лиц</h2>
+                <p class="main_description service_data__description">Домашний переезд может быть одним из самых захватывающих и одновременно сложных событий в вашей жизни. В частности, если вы планируете домашний переезд в Москву. В этой статье мы рассмотрим, как выбрать подходящий транспорт, какие факторы следует учесть при переезде, и какую помощь может предоставить транспортная компания «С Переездом!».</p>
+                <div class="service_data__content">
+                    <img src="./images/service_data_card.png" alt="">
+                    <div class="service_data__content_right">
+                        <h2>Персональный подход <br> к каждому клиенту</h2>
+                        <p class="main_description">Одной из основных принципов работы транспортной компании «С Переездом!» является персональный подход к каждому клиенту. Мы понимаем, что каждый домашний переезд уникален и требует особого внимания. Поэтому, с первого же звонка, вам будет предоставлен персональный менеджер, который поможет вам с выбором подходящего транспорта, произведет точный расчет стоимости и ответит на все ваши вопросы.</p>
+                    </div>
+                </div>
+                <h2 class="service_data__title">Выбор транспорта для домашнего переезда в Москву</h2>
+                <p class="main_description service_data__description">Ключевым этапом в организации домашнего переезда в Москву является выбор подходящего транспорта. Он должен соответствовать объему ваших вещей и габаритам мебели. Вот несколько рекомендаций:</p>
+                <ul>
+                    <li>
+                        <span></span>
+                        <div>
+                            <h4>Однокомнатная квартира</h4>
+                            <p class="main_description">Если у вас однокомнатная квартира и объем перевозимых вещей небольшой, то для вас подойдет машина с грузоподъемностью до 1,5 тонн. Габариты машины подбираются исходя из самых крупных предметов мебели.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span></span>
+                        <div>
+                            <h4>Двухкомнатная квартира</h4>
+                            <p class="main_description">В случае, если у вас двухкомнатная квартира и объем вещей больше, вам потребуется более вместительный транспорт. Газель может подойти, но если у вас много мебели, рекомендуется выбрать машину с грузоподъемностью от 3 до 5 тонн.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span></span>
+                        <div>
+                            <h4>Трехкомнатная квартира</h4>
+                            <p class="main_description">Если у вас трехкомнатная квартира или частный дом, где накопилось много вещей, то вам потребуется грузовик с грузоподъемностью от 10 до 20 тонн. Здесь важно учесть, что большая часть перевозимой мебели может потребовать разборки и последующей сборки на новом месте.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Service datas end -->
+
+        <!-- Tarif -->
+        <section class="tarif">
+            <div class="main_container">
+                <div class="tarif__content">
+                    <div class="tarif__head">
+                        <h2 class="tarif__title">Наши тарифы</h2>
+                        <a href="#" class="btn_white city_modal__open">
+                            <img src="./images/icons/tarif_edit_icon.svg" alt="">
+                            <span>Изменить  город отправления</span>
+                        </a>
+                    </div>
+                    <div class="tarif__table_wrap">
+                        <div class="tarif__table">
+                            <div class="tarif__table_head">
+                                <h3 class="tarif__table_head__left">
+                                    <span>Откуда:</span>
+                                    Петропавловск-Камчатский
+                                    <a href="#">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 12.0478C20.7348 12.0478 20.4804 12.1531 20.2929 12.3407C20.1054 12.5282 20 12.7826 20 13.0478V19.0478C20 19.313 19.8946 19.5674 19.7071 19.7549C19.5196 19.9424 19.2652 20.0478 19 20.0478H5C4.73478 20.0478 4.48043 19.9424 4.29289 19.7549C4.10536 19.5674 4 19.313 4 19.0478V5.04779C4 4.78257 4.10536 4.52822 4.29289 4.34068C4.48043 4.15315 4.73478 4.04779 5 4.04779H11C11.2652 4.04779 11.5196 3.94243 11.7071 3.7549C11.8946 3.56736 12 3.31301 12 3.04779C12 2.78257 11.8946 2.52822 11.7071 2.34068C11.5196 2.15315 11.2652 2.04779 11 2.04779H5C4.20435 2.04779 3.44129 2.36386 2.87868 2.92647C2.31607 3.48908 2 4.25214 2 5.04779V19.0478C2 19.8434 2.31607 20.6065 2.87868 21.1691C3.44129 21.7317 4.20435 22.0478 5 22.0478H19C19.7956 22.0478 20.5587 21.7317 21.1213 21.1691C21.6839 20.6065 22 19.8434 22 19.0478V13.0478C22 12.7826 21.8946 12.5282 21.7071 12.3407C21.5196 12.1531 21.2652 12.0478 21 12.0478ZM6 12.8078V17.0478C6 17.313 6.10536 17.5674 6.29289 17.7549C6.48043 17.9424 6.73478 18.0478 7 18.0478H11.24C11.3716 18.0486 11.5021 18.0233 11.6239 17.9736C11.7457 17.9238 11.8566 17.8505 11.95 17.7578L18.87 10.8278L21.71 8.04779C21.8037 7.95483 21.8781 7.84423 21.9289 7.72237C21.9797 7.60051 22.0058 7.4698 22.0058 7.33779C22.0058 7.20578 21.9797 7.07507 21.9289 6.95321C21.8781 6.83135 21.8037 6.72075 21.71 6.62779L17.47 2.33779C17.377 2.24406 17.2664 2.16967 17.1446 2.1189C17.0227 2.06813 16.892 2.04199 16.76 2.04199C16.628 2.04199 16.4973 2.06813 16.3754 2.1189C16.2536 2.16967 16.143 2.24406 16.05 2.33779L13.23 5.16779L6.29 12.0978C6.19732 12.1912 6.12399 12.302 6.07423 12.4239C6.02446 12.5457 5.99924 12.6762 6 12.8078ZM16.76 4.45779L19.59 7.28779L18.17 8.70779L15.34 5.87779L16.76 4.45779ZM8 13.2178L13.93 7.28779L16.76 10.1178L10.83 16.0478H8V13.2178Z" fill="#6FBB40"/>
+                                        </svg>
+                                    </a>
+                                </h3>
+                                <ul class="tarif__table_head__right">
+                                    <li>
+                                        <span>1-комнатная <br> квартира</span>
+                                        <span class="sm">1-комн. кв.</span>
+                                    </li>
+                                    <li>
+                                        <span>2-комнатная <br> квартира</span>
+                                        <span class="sm">2-комн. кв.</span>
+                                    </li>
+                                    <li>
+                                        <span>3-комнатная <br> квартира</span>
+                                        <span class="sm">3-комн. <br> кв.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tarif__table_body">
+                                <div class="tarif__table_body__item">
+                                    <span class="subtitle">Куда:</span>
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Москва</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Абакан</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Азов</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Астрахань</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Адыгея</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="tarif__table_body__item">
+                                    <h3 class="tarif__table_body__left">
+                                        <img src="./images/icons/header__location.svg" alt="">
+                                        <span>Санкт-Петербург</span>
+                                        <img src="./images/icons/chevron-right.svg" alt="">
+                                    </h3>
+                                    <ul class="tarif__table_body__right">
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                        <li>000 000 ₽</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tarif end -->
+
+        <!-- Service cost -->
+        <section class="service_cost">
+            <div class="main_container service_cost__top">
+                <div class="service_cost__top_left">
+                    <h2>Перевозка крупногабаритных предметов</h2>
+                    <p class="main_description">Если у вас есть крупногабаритные предметы, такие как пианино, сейфы или музыкальные инструменты, компания предоставит специалистов-такелажников, которые займутся транспортировкой этих предметов с максимальной осторожностью.</p>
+                    <img src="./images/service_cost_card_1.png" alt="">
+                </div>
+                <div class="service_cost__top_right">
+                    <h2>Дополнительные услуги</h2>
+                    <p class="main_description">Компания «С Переездом!» предлагает ряд дополнительных услуг, чтобы сделать ваш домашний переезд в Москву еще более комфортным:</p>
+                    <ul>
+                        <li>
+                            <span></span>
+                            <div>
+                                <h4>Отслеживание местоположения машины</h4>
+                                <p class="main_description">Вы всегда будете в курсе, где находится ваш груз.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div>
+                                <h4>Материальная ответственность:</h4>
+                                <p class="main_description">Мы гарантируем сохранность ваших вещей.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div>
+                                <h4>Возможность оплаты рейса на выгрузке</h4>
+                                <p class="main_description">Платите только после выполнения перевозки.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div>
+                                <h4>Погрузка в любое время 24/7</h4>
+                                <p class="main_description">Мы работаем в удобное для вас время, даже в выходные и праздники</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div>
+                                <h4>Предоставление грузчиков и упаковщиков</h4>
+                                <p class="main_description">Если вам нужна помощь с погрузкой и упаковкой, мы всегда готовы предоставить специалистов.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_container service_cost__bottom">
+                <div class="service_cost__bottom_left">
+                    <h2>Переезд без забот: доверьтесь профессионалам нашей компании</h2>
+                    <p class="main_description">Домашний переезд — это серьезное событие, и выбор надежной транспортной компании играет важную роль в его успешной организации. Транспортная компания «С Переездом!» предоставляет широкий спектр услуг, чтобы сделать ваш переезд легким и комфортным. С нами вашим вещам гарантирована безопасность и точность доставки.</p>
+                    <img src="./images/service_cost_card_2.png" alt="">
+                    <p class="main_description">Не откладывайте решение о переезде, доверьтесь профессионалам, и встречайте новый этап своей жизни с уверенностью.</p>
+                    <p class="main_description">Менеджеры компании будут рады помочь Вам с выбором транспорта и осуществлением переезда без лишних затрат!</p>
+                    <img src="./images/service_cost_card_2_sm.png" class="sm" alt="">
+                </div>
+                <div class="service_cost__bottom_right">
+                    <h2>Расчет стоимости</h2>
+                    <p class="main_description">Стоимость домашнего переезда всегда рассчитывается индивидуально. Она зависит от объема перевозки, расстояния, дополнительных услуг и других особенностей переезда. Вы всегда можете воспользоваться калькулятором на нашем сайте для оценки стоимости. Точную цену уточните, позвонив по телефону, где наши специалисты ответят на все ваши вопросы.</p>
+                    <h3>Минимальная стоимость составляет всего <span>1000</span> рублей!</h3>
+                    <div class="btns">
+                        <a href="#" class="btn_green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 7C6.5 5.89543 7.39543 5 8.5 5H15.5C16.6046 5 17.5 5.89543 17.5 7V9C17.5 10.1046 16.6046 11 15.5 11H8.5C7.39543 11 6.5 10.1046 6.5 9V7ZM8.5 7H15.5V9H8.5V7Z" fill="white"/>
+                                <path d="M8.5 14C8.5 14.5523 8.05228 15 7.5 15C6.94772 15 6.5 14.5523 6.5 14C6.5 13.4477 6.94772 13 7.5 13C8.05228 13 8.5 13.4477 8.5 14Z" fill="white"/>
+                                <path d="M7.5 19C8.05228 19 8.5 18.5523 8.5 18C8.5 17.4477 8.05228 17 7.5 17C6.94772 17 6.5 17.4477 6.5 18C6.5 18.5523 6.94772 19 7.5 19Z" fill="white"/>
+                                <path d="M13 14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14C11 13.4477 11.4477 13 12 13C12.5523 13 13 13.4477 13 14Z" fill="white"/>
+                                <path d="M12 19C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17C11.4477 17 11 17.4477 11 18C11 18.5523 11.4477 19 12 19Z" fill="white"/>
+                                <path d="M17.5 14C17.5 14.5523 17.0523 15 16.5 15C15.9477 15 15.5 14.5523 15.5 14C15.5 13.4477 15.9477 13 16.5 13C17.0523 13 17.5 13.4477 17.5 14Z" fill="white"/>
+                                <path d="M16.5 19C17.0523 19 17.5 18.5523 17.5 18C17.5 17.4477 17.0523 17 16.5 17C15.9477 17 15.5 17.4477 15.5 18C15.5 18.5523 15.9477 19 16.5 19Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 4C2.5 2.34315 3.84315 1 5.5 1H18.5C20.1569 1 21.5 2.34315 21.5 4V20C21.5 21.6569 20.1569 23 18.5 23H5.5C3.84315 23 2.5 21.6569 2.5 20V4ZM5.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V20C19.5 20.5523 19.0523 21 18.5 21H5.5C4.94772 21 4.5 20.5523 4.5 20V4C4.5 3.44772 4.94772 3 5.5 3Z" fill="white"/>
+                            </svg>
+                            <span>Рассчитать стоимость</span>
+                        </a>
+                        <a href="#" class="btn_orange">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2040_2755)">
+                                    <path d="M11.1112 5.78805C10.9611 5.37962 10.6605 5.04408 10.271 4.85025C9.88143 4.65641 9.43248 4.61899 9.01621 4.74564C7.04293 5.35405 5.66387 7.04746 5.95996 9.00654C6.29111 11.1809 7.0279 13.2736 8.13199 15.1758C9.22426 17.0736 10.6562 18.7544 12.3564 20.1344C13.8855 21.3715 16.0312 21.0308 17.5441 19.6111C17.8623 19.3124 18.0554 18.9042 18.0844 18.4687C18.1134 18.0332 17.9761 17.6029 17.7003 17.2647L16.6173 15.9404C16.4004 15.6741 16.1084 15.4791 15.7794 15.3808C15.4503 15.2824 15.0992 15.2852 14.7718 15.3888L12.2732 16.1797L11.8372 15.7295C11.2878 15.1597 10.8073 14.5273 10.4054 13.8454C10.0154 13.1558 9.71161 12.4209 9.50091 11.6572L9.33258 11.0589L11.2592 9.28438C11.5134 9.04832 11.6918 8.74203 11.7716 8.40441C11.8514 8.06679 11.8291 7.71307 11.7074 7.38817L11.1112 5.78805ZM8.41997 2.80684C9.33087 2.52814 10.3139 2.60835 11.1675 3.03104C12.0212 3.45372 12.6809 4.18688 13.0114 5.08027L13.6057 6.67836C13.8678 7.38045 13.9152 8.14464 13.7419 8.87375C13.5685 9.60286 13.1823 10.264 12.6322 10.773L11.6385 11.6876C11.7662 12.0405 11.9386 12.4441 12.1617 12.8355C12.3848 13.2208 12.6444 13.5716 12.8816 13.8576L14.1593 13.452C14.8736 13.2265 15.6391 13.2205 16.3569 13.4349C17.0746 13.6494 17.7114 14.0742 18.185 14.6546L19.2679 15.9789C19.8698 16.7149 20.1698 17.6519 20.1073 18.6006C20.0448 19.5493 19.6245 20.4389 18.9313 21.0896C16.9154 22.9817 13.6239 23.7666 11.0828 21.7102C9.18928 20.174 7.59441 18.3028 6.37774 16.1898C5.14601 14.0682 4.32391 11.734 3.95424 9.30872C3.46751 6.07806 5.78555 3.61805 8.41997 2.80887" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2040_2755">
+                                        <rect width="17.2591" height="23.0122" fill="white" transform="translate(3.37061 1.27637)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service cost end -->
+
+        <!-- Reasons -->
+        <section class="reasons">
+            <div class="main_container reasons__container">
+                <div class="ready_to_help">
+                    <h2>Персональный менеджер всегда готов помочь!</h2>
+                    <img src="./images/personal_manager.png" alt="" class="person">
+                    <img src="./images/icons/clock.png" alt="" class="clock">
+                    <a href="#" class="btn_green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12.0003C21.9999 12.1859 21.9481 12.3679 21.8504 12.5258C21.7528 12.6837 21.6131 12.8113 21.447 12.8943L3.447 21.8943C3.27807 21.9786 3.08874 22.0133 2.9009 21.9945C2.71305 21.9757 2.53438 21.9041 2.38552 21.7879C2.23667 21.6718 2.12372 21.516 2.05975 21.3383C1.99577 21.1607 1.98338 20.9686 2.024 20.7843L3.976 12.0003L2.024 3.21728C1.98314 3.03285 1.99535 2.84061 2.05923 2.66284C2.12311 2.48506 2.23603 2.32901 2.38493 2.21276C2.53383 2.09651 2.71261 2.02481 2.90057 2.00596C3.08853 1.98712 3.27799 2.0219 3.447 2.10628L21.447 11.1063C21.6131 11.1893 21.7528 11.3169 21.8504 11.4748C21.9481 11.6327 21.9999 11.8146 22 12.0003ZM5.802 13.0003L4.432 19.1663L16.764 13.0003L5.802 13.0003ZM16.764 11.0003L4.432 4.83428L5.802 11.0003L16.764 11.0003Z" fill="white"/>
+                        </svg>
+                        <span>Заявка на переезд</span>
+                    </a>
+                </div>
+                <div class="reasons_card">
+                    <h2>9 причин обратиться к нам</h2>
+                    <div class="reasons_card__list">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                <p class="main_description">Персональный менеджер с Вами на связи в режиме 24/7</p>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <p class="main_description">Отслеживание местоположения машины с Вашим грузом</p>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <p class="main_description">Материальная ответственность за сохранность груза</p>
+                            </li>
+                            <li>
+                                <span>4</span>
+                                <p class="main_description">Возможность оплачивать рейс на выгрузке (без предоплаты)</p>
+                            </li>
+                            <li>
+                                <span>5</span>
+                                <p class="main_description">Опломбировка кузова с грузом</p>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <span>6</span>
+                                <p class="main_description">Доставка «от подъезда к подъезду»</p>
+                            </li>
+                            <li>
+                                <span>7</span>
+                                <p class="main_description">Погрузка в любое время 24/7. В том числе в выходные и праздники.</p>
+                            </li>
+                            <li>
+                                <span>8</span>
+                                <p class="main_description">Предоставим грузчиков, упаковщиков, если потребуется</p>
+                            </li>
+                            <li>
+                                <span>9</span>
+                                <p class="main_description">Наши заказчики рекомендуют нас друзьям</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reasons end -->
+
+        <!-- Moving price -->
+        <section class="moving_price">
+            <div class="main_container">
+                <div class="moving_price__content">
+                    <h2 class="moving_price__title">Цены на домашний переезд</h2>
+                    <p class="main_description">Стоимость переезда всегда рассчитывается индивидуально по следующим параметрам:</p>
+                    <div class="moving_price__list">
+                        <ul>
+                            <li>
+                                <span class="brick"></span>
+                                <div>
+                                    <h4>Объем предстоящей перевозки.</h4>
+                                    <p class="main_description">Чем меньше вещей, тем дешевле.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="brick"></span>
+                                <div>
+                                    <h4>Расстояние и особенности маршрута.</h4>
+                                    <p class="main_description">Мы перевозим имущество по всей России, и естественно, междугородний переезд из Москвы в Подмосковье обойдется дешевле перевозки из Владивостока в Краснодар.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="brick"></span>
+                                <div>
+                                    <h4>Необходимость в дополнительных услугах</h4>
+                                    <p class="main_description">Отдельно оплачиваются услуги грузчиков, упаковщиков, такелажников, если таковые нужны для вашего междугороднего переезда.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="brick"></span>
+                                <div>
+                                    <h4>Другие особые условия переезда</h4>
+                                    <p class="main_description">Например, большое количество комнатных растений или домашние животные.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="moving_price__bottom">
+                        <p class="main_description">Сориентироваться по стоимости можно при помощи калькулятора. Для выяснения точной цены звоните по телефону:</p>
+                        <div class="tel">
+                            <h2>8 (800) 301-47-91</h2>
+                            <p class="main_description">(звонок по России бесплатный)</p>
+                        </div>
+                        <p class="main_description">Наши специалисты выяснят все необходимые для расчета детали и озвучат точную стоимость переезда.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Moving price end -->
+
+        <!-- Our results -->
+        <section class="our_result">
+            <ul class="main_container our_result__container">
+                <li>
+                    <b><span>3</span>65</b>
+                    <p class="main_description">дней в году <br> работаем для вас</p>
+                </li>
+                <li>
+                    <b><span>3</span>82</b>
+                    <p class="main_description">переезда <br> в месяц</p>
+                </li>
+                <li>
+                    <b><span>1</span>117</b>
+                    <p class="main_description">городов <br> России</p>
+                </li>
+                <li>
+                    <b><span>6</span>000</b>
+                    <p class="main_description">довольных <br> семей</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Our results end -->
+
+        <!-- Review -->
+        <section class="review">
+            <div class="main_container">
+                <div class="review__head">
+                    <h2 class="review__title">Отзывы наших клиентов</h2>
+
+                    <!-- Use classes 'disabled'. example: class="btn_gray disabled" -->
+                    <a href="#" class="btn_gray">Смотреть все отзывы</a>
+                </div>
+
+                <div class="review__slider">
+                    <div class="review__slider_btn">
+                        <button class="review__slider_btn__prev">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                        <button class="review__slider_btn__next">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide review__item">
+                                <h4 class="review__item_title">
+                                    <img src="./images/comment_person.png" alt="">
+                                    <span>Константин Константинович Константинопольский</span>
+                                </h4>
+                                <div class="review__item_stars">
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                </div>
+                                <div class="review__item_description">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, quo. Aspernatur explicabo officia nesciunt quasi maxime fuga deserunt, vitae exercitationem incidunt vero eos dolor quis adipisci illo aperiam natus sunt tenetur accusamus temporibus numquam deleniti. Perferendis voluptatibus voluptatum sapiente quidem, corrupti eveniet omnis vel iusto animi, repellat ad consectetur id consequatur fugit ipsum dicta culpa! Sequi illum voluptatem minima enim, esse dolores modi vero iusto, facilis reiciendis blanditiis. Totam distinctio enim illo consectetur iusto velit modi cupiditate doloribus assumenda explicabo laudantium, itaque autem est aliquid voluptatum in odit eos reiciendis beatae minus alias exercitationem ipsa! Ducimus explicabo architecto odit deserunt!
+                                    </p>
+                                    <button class="review__item_show">Читать далее</button>
+                                </div>
+                                <a href="#" class="btn_white show_more">Смотреть все отзывы</a>
+                                <div class="review__item_yandex">
+                                    <div class="yandex__head">
+                                        <img src="./images/logo/yandex.svg" class="yandex__head_img" alt="">
+                                        <div class="yandex__stars">
+                                            <span>5.0</span>
+                                            <div class="yandex__stars_icon">
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_orange">
+                                            <span>Смотреть</span>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19279 14.0689C5.80227 13.6784 5.80227 13.0452 6.1928 12.6547L9.68588 9.16165L6.1928 5.66856C5.80227 5.27804 5.80227 4.64487 6.1928 4.25435C6.58332 3.86382 7.21648 3.86382 7.60701 4.25435L11.8072 8.45454C12.1977 8.84507 12.1977 9.47824 11.8072 9.86876L7.60701 14.0689C7.21648 14.4594 6.58332 14.4594 6.19279 14.0689Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="yandex__description">Более сотни положительных отзывов! <br> И вторая строчка текста!</p>
+                                    <a href="#" class="btn_white yandex__link">Смотреть отзывы на Яндексе</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide review__item">
+                                <h4 class="review__item_title">
+                                    <img src="./images/comment_person.png" alt="">
+                                    <span>Константин Константинович Константинопольский</span>
+                                </h4>
+                                <div class="review__item_stars">
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                </div>
+                                <div class="review__item_description">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, quo. Aspernatur explicabo officia nesciunt quasi maxime fuga deserunt, vitae exercitationem incidunt vero eos dolor quis adipisci illo aperiam natus sunt tenetur accusamus temporibus numquam deleniti. Perferendis voluptatibus voluptatum sapiente quidem, corrupti eveniet omnis vel iusto animi, repellat ad consectetur id consequatur fugit ipsum dicta culpa! Sequi illum voluptatem minima enim, esse dolores modi vero iusto, facilis reiciendis blanditiis. Totam distinctio enim illo consectetur iusto velit modi cupiditate doloribus assumenda explicabo laudantium, itaque autem est aliquid voluptatum in odit eos reiciendis beatae minus alias exercitationem ipsa! Ducimus explicabo architecto odit deserunt!
+                                    </p>
+                                    <button class="review__item_show">Читать далее</button>
+                                </div>
+                                <a href="#" class="btn_white show_more">Смотреть все отзывы</a>
+                                <div class="review__item_yandex">
+                                    <div class="yandex__head">
+                                        <img src="./images/logo/yandex.svg" class="yandex__head_img" alt="">
+                                        <div class="yandex__stars">
+                                            <span>5.0</span>
+                                            <div class="yandex__stars_icon">
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_orange">
+                                            <span>Смотреть</span>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19279 14.0689C5.80227 13.6784 5.80227 13.0452 6.1928 12.6547L9.68588 9.16165L6.1928 5.66856C5.80227 5.27804 5.80227 4.64487 6.1928 4.25435C6.58332 3.86382 7.21648 3.86382 7.60701 4.25435L11.8072 8.45454C12.1977 8.84507 12.1977 9.47824 11.8072 9.86876L7.60701 14.0689C7.21648 14.4594 6.58332 14.4594 6.19279 14.0689Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="yandex__description">Более сотни положительных отзывов! <br> И вторая строчка текста!</p>
+                                    <a href="#" class="btn_white yandex__link">Смотреть отзывы на Яндексе</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide review__item">
+                                <h4 class="review__item_title">
+                                    <img src="./images/comment_person.png" alt="">
+                                    <span>Константин Константинович Константинопольский</span>
+                                </h4>
+                                <div class="review__item_stars">
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                </div>
+                                <div class="review__item_description">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, quo. Aspernatur explicabo officia nesciunt quasi maxime fuga deserunt, vitae exercitationem incidunt vero eos dolor quis adipisci illo aperiam natus sunt tenetur accusamus temporibus numquam deleniti. Perferendis voluptatibus voluptatum sapiente quidem, corrupti eveniet omnis vel iusto animi, repellat ad consectetur id consequatur fugit ipsum dicta culpa! Sequi illum voluptatem minima enim, esse dolores modi vero iusto, facilis reiciendis blanditiis. Totam distinctio enim illo consectetur iusto velit modi cupiditate doloribus assumenda explicabo laudantium, itaque autem est aliquid voluptatum in odit eos reiciendis beatae minus alias exercitationem ipsa! Ducimus explicabo architecto odit deserunt!
+                                    </p>
+                                    <button class="review__item_show">Читать далее</button>
+                                </div>
+                                <a href="#" class="btn_white show_more">Смотреть все отзывы</a>
+                                <div class="review__item_yandex">
+                                    <div class="yandex__head">
+                                        <img src="./images/logo/yandex.svg" class="yandex__head_img" alt="">
+                                        <div class="yandex__stars">
+                                            <span>5.0</span>
+                                            <div class="yandex__stars_icon">
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_orange">
+                                            <span>Смотреть</span>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19279 14.0689C5.80227 13.6784 5.80227 13.0452 6.1928 12.6547L9.68588 9.16165L6.1928 5.66856C5.80227 5.27804 5.80227 4.64487 6.1928 4.25435C6.58332 3.86382 7.21648 3.86382 7.60701 4.25435L11.8072 8.45454C12.1977 8.84507 12.1977 9.47824 11.8072 9.86876L7.60701 14.0689C7.21648 14.4594 6.58332 14.4594 6.19279 14.0689Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="yandex__description">Более сотни положительных отзывов! <br> И вторая строчка текста!</p>
+                                    <a href="#" class="btn_white yandex__link">Смотреть отзывы на Яндексе</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide review__item">
+                                <h4 class="review__item_title">
+                                    <img src="./images/comment_person.png" alt="">
+                                    <span>Константин Константинович Константинопольский</span>
+                                </h4>
+                                <div class="review__item_stars">
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                </div>
+                                <div class="review__item_description">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, quo. Aspernatur explicabo officia nesciunt quasi maxime fuga deserunt, vitae exercitationem incidunt vero eos dolor quis adipisci illo aperiam natus sunt tenetur accusamus temporibus numquam deleniti. Perferendis voluptatibus voluptatum sapiente quidem, corrupti eveniet omnis vel iusto animi, repellat ad consectetur id consequatur fugit ipsum dicta culpa! Sequi illum voluptatem minima enim, esse dolores modi vero iusto, facilis reiciendis blanditiis. Totam distinctio enim illo consectetur iusto velit modi cupiditate doloribus assumenda explicabo laudantium, itaque autem est aliquid voluptatum in odit eos reiciendis beatae minus alias exercitationem ipsa! Ducimus explicabo architecto odit deserunt!
+                                    </p>
+                                    <button class="review__item_show">Читать далее</button>
+                                </div>
+                                <a href="#" class="btn_white show_more">Смотреть все отзывы</a>
+                                <div class="review__item_yandex">
+                                    <div class="yandex__head">
+                                        <img src="./images/logo/yandex.svg" class="yandex__head_img" alt="">
+                                        <div class="yandex__stars">
+                                            <span>5.0</span>
+                                            <div class="yandex__stars_icon">
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_orange">
+                                            <span>Смотреть</span>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19279 14.0689C5.80227 13.6784 5.80227 13.0452 6.1928 12.6547L9.68588 9.16165L6.1928 5.66856C5.80227 5.27804 5.80227 4.64487 6.1928 4.25435C6.58332 3.86382 7.21648 3.86382 7.60701 4.25435L11.8072 8.45454C12.1977 8.84507 12.1977 9.47824 11.8072 9.86876L7.60701 14.0689C7.21648 14.4594 6.58332 14.4594 6.19279 14.0689Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="yandex__description">Более сотни положительных отзывов! <br> И вторая строчка текста!</p>
+                                    <a href="#" class="btn_white yandex__link">Смотреть отзывы на Яндексе</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide review__item">
+                                <h4 class="review__item_title">
+                                    <img src="./images/comment_person.png" alt="">
+                                    <span>Константин Константинович Константинопольский</span>
+                                </h4>
+                                <div class="review__item_stars">
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                    </svg>
+                                </div>
+                                <div class="review__item_description">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, quo. Aspernatur explicabo officia nesciunt quasi maxime fuga deserunt, vitae exercitationem incidunt vero eos dolor quis adipisci illo aperiam natus sunt tenetur accusamus temporibus numquam deleniti. Perferendis voluptatibus voluptatum sapiente quidem, corrupti eveniet omnis vel iusto animi, repellat ad consectetur id consequatur fugit ipsum dicta culpa! Sequi illum voluptatem minima enim, esse dolores modi vero iusto, facilis reiciendis blanditiis. Totam distinctio enim illo consectetur iusto velit modi cupiditate doloribus assumenda explicabo laudantium, itaque autem est aliquid voluptatum in odit eos reiciendis beatae minus alias exercitationem ipsa! Ducimus explicabo architecto odit deserunt!
+                                    </p>
+                                    <button class="review__item_show">Читать далее</button>
+                                </div>
+                                <a href="#" class="btn_white show_more">Смотреть все отзывы</a>
+                                <div class="review__item_yandex">
+                                    <div class="yandex__head">
+                                        <img src="./images/logo/yandex.svg" class="yandex__head_img" alt="">
+                                        <div class="yandex__stars">
+                                            <span>5.0</span>
+                                            <div class="yandex__stars_icon">
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.4075 1.08069C11.9292 0.294398 13.0838 0.294399 13.6055 1.08069L16.7815 5.86743C16.9567 6.13156 17.2212 6.32374 17.5266 6.40879L23.0605 7.95012C23.9695 8.20331 24.3263 9.30138 23.7397 10.0405L20.1687 14.5402C19.9716 14.7885 19.8706 15.0995 19.8841 15.4162L20.1282 21.1555C20.1683 22.0983 19.2343 22.7769 18.35 22.4474L12.967 20.4417C12.67 20.331 12.3431 20.331 12.046 20.4417L6.66304 22.4474C5.77881 22.7769 4.84474 22.0983 4.88484 21.1555L5.12902 15.4162C5.14249 15.0995 5.04146 14.7885 4.84441 14.5402L1.27337 10.0405C0.686775 9.30138 1.04356 8.20331 1.95258 7.95012L7.48647 6.40879C7.79183 6.32374 8.05634 6.13156 8.23158 5.86743L11.4075 1.08069Z" fill="#F58D38"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn_orange">
+                                            <span>Смотреть</span>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19279 14.0689C5.80227 13.6784 5.80227 13.0452 6.1928 12.6547L9.68588 9.16165L6.1928 5.66856C5.80227 5.27804 5.80227 4.64487 6.1928 4.25435C6.58332 3.86382 7.21648 3.86382 7.60701 4.25435L11.8072 8.45454C12.1977 8.84507 12.1977 9.47824 11.8072 9.86876L7.60701 14.0689C7.21648 14.4594 6.58332 14.4594 6.19279 14.0689Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="yandex__description">Более сотни положительных отзывов! <br> И вторая строчка текста!</p>
+                                    <a href="#" class="btn_white yandex__link">Смотреть отзывы на Яндексе</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="review__slider_pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Review end -->
+
+        <!-- Your calls -->
+        <section class="your_calls">
+            <div class="main_container your_calls__container">
+                <div class="payment_card">
+                    <h2>Оплата любым способом</h2>
+                    <ul>
+                        <li>
+                            <img src="./images/payment_card_1.svg" alt="">
+                            <p class="main_description">Принимаем <br> наличные</p>
+                        </li>
+                        <li>
+                            <img src="./images/payment_card_2.svg" alt="">
+                            <p class="main_description">Оплата <br> по счету</p>
+                        </li>
+                        <li>
+                            <img src="./images/payment_card_3.svg" alt="">
+                            <p class="main_description">Банковской <br> картой</p>
+                        </li>
+                        <li>
+                            <img src="./images/payment_card_4.svg" alt="">
+                            <p class="main_description">Оплата <br> онлайн</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="your_calls__left">
+                    <h2 class="your_calls__title">Ждем ваших звонков!</h2>
+                    <div class="your_calls__links">
+                        <a href="#">
+                            <img src="./images/icons/phone.svg" alt="">
+                            <span>8 (800) 301-47-978</span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/mb_phone.svg" alt="">
+                            <span>8 (969) 777-83-97</span>
+                        </a>
+                        <p>Ежедневно c 8:00 до 21:00</p>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn_green">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.4995 11.9998C22.4994 12.1855 22.4476 12.3674 22.35 12.5253C22.2523 12.6832 22.1126 12.8108 21.9465 12.8938L3.94651 21.8938C3.77759 21.9781 3.58825 22.0128 3.40041 21.994C3.21257 21.9752 3.03389 21.9036 2.88503 21.7875C2.73618 21.6713 2.62323 21.5155 2.55926 21.3379C2.49528 21.1602 2.48289 20.9682 2.52351 20.7838L4.47551 11.9998L2.52351 3.21679C2.48265 3.03236 2.49487 2.84012 2.55874 2.66235C2.62262 2.48457 2.73554 2.32852 2.88444 2.21227C3.03334 2.09602 3.21212 2.02432 3.40008 2.00548C3.58804 1.98663 3.7775 2.02141 3.94651 2.10579L21.9465 11.1058C22.1126 11.1888 22.2523 11.3164 22.35 11.4743C22.4476 11.6322 22.4994 11.8141 22.4995 11.9998ZM6.30151 12.9998L4.93151 19.1658L17.2635 12.9998L6.30151 12.9998ZM17.2635 10.9998L4.93151 4.83379L6.30151 10.9998L17.2635 10.9998Z" fill="white"/>
+                            </svg>
+                            <span>Заявка на переезд</span>
+                        </a>
+                        <a href="#" class="btn_orange">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2040_271)">
+                                    <path d="M11.1107 5.96603C10.9607 5.5576 10.66 5.22206 10.2705 5.02823C9.88094 4.83439 9.43199 4.79697 9.01572 4.92362C7.04244 5.53203 5.66338 7.22544 5.95947 9.18452C6.29062 11.3589 7.02741 13.4516 8.1315 15.3538C9.22377 17.2516 10.6557 18.9324 12.3559 20.3123C13.885 21.5494 16.0307 21.2087 17.5436 19.7891C17.8618 19.4904 18.0549 19.0821 18.0839 18.6467C18.1129 18.2112 17.9756 17.7809 17.6998 17.4427L16.6168 16.1184C16.3999 15.8521 16.108 15.6571 15.7789 15.5587C15.4498 15.4604 15.0988 15.4632 14.7713 15.5667L12.2727 16.3577L11.8367 15.9075C11.2873 15.3377 10.8068 14.7053 10.4049 14.0234C10.0149 13.3338 9.71112 12.5989 9.50042 11.8352L9.3321 11.2369L11.2587 9.46236C11.513 9.2263 11.6913 8.92001 11.7711 8.58239C11.8509 8.24477 11.8286 7.89105 11.7069 7.56615L11.1107 5.96603ZM8.41948 2.98482C9.33038 2.70612 10.3134 2.78633 11.167 3.20902C12.0207 3.6317 12.6804 4.36485 13.011 5.25824L13.6052 6.85634C13.8673 7.55843 13.9147 8.32262 13.7414 9.05173C13.568 9.78084 13.1818 10.4419 12.6317 10.9509L11.638 11.8656C11.7657 12.2185 11.9381 12.622 12.1612 13.0134C12.3843 13.3988 12.6439 13.7496 12.8812 14.0356L14.1588 13.63C14.8731 13.4045 15.6387 13.3985 16.3564 13.6129C17.0741 13.8273 17.7109 14.2522 18.1845 14.8326L19.2674 16.1569C19.8693 16.8929 20.1693 17.8299 20.1068 18.7786C20.0443 19.7273 19.624 20.6169 18.9308 21.2675C16.9149 23.1597 13.6234 23.9446 11.0823 21.8881C9.1888 20.352 7.59393 18.4808 6.37725 16.3678C5.14552 14.2462 4.32342 11.912 3.95375 9.4867C3.46702 6.25604 5.78506 3.79603 8.41948 2.98685" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2040_271">
+                                        <rect width="17.2591" height="23.0122" fill="white" transform="translate(3.37036 1.45435)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="./images/your_calls_car.png" class="your_calls__left_car" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Your calls end -->
+
+        </main>
+
+        
+        <!-- footer -->
+        <footer class="footer">
+            <div class="main_container footer__container">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <ul>
+                        <li class="phone phone_1">
+                            <a href="#">
+                                <img src="./images/icons/phone.svg" alt="">
+                                <span>8 (800) 301-47-978</span>
+                            </a>
+                        </li>
+                        <li class="email">
+                            <a href="#">
+                                <img src="./images/icons/email.svg" alt="">
+                                <span>info@s-pereezdom.ru</span>
+                            </a>
+                        </li>
+                        <li class="phone phone_2">
+                            <a href="#">
+                                <img src="./images/icons/mb_phone.svg" alt="">
+                                <span>8 (969) 777-83-97</span>
+                            </a>
+                        </li>
+                        <li class="networks">
+                            <a href="#">
+                                <img src="./images/icons/vk.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/adno.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/tg.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/wb.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="address">
+                            <a href="#">
+                                <img src="./images/icons/address.svg" alt="">
+                                <span>Россия, 413100, Энгельс, ул. Демократическая, д.1, офис 201/1</span>
+                            </a>
+                        </li>
+                        <li class="yandex">
+                            <div class="yandex_in">
+                                <img src="./images/logo/yandex.svg" alt="">
+                                <span class="stars">
+                                    <b>5.0</b>
+                                    <span>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__navs">
+                    <li class="footer__navs_item">
+                        <h5>
+                            Меню
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18221 4.97355C3.48603 4.66974 3.97861 4.66974 4.28242 4.97356L6.99991 7.69106L9.71742 4.97355C10.0212 4.66974 10.5138 4.66974 10.8176 4.97355C11.1214 5.27737 11.1214 5.76995 10.8176 6.07377L7.55001 9.34138C7.2462 9.6452 6.75361 9.6452 6.4498 9.34138L3.18221 6.07376C2.87839 5.76995 2.87839 5.27737 3.18221 4.97355Z" fill="#929C91"/>
+                            </svg>
+                        </h5>
+                        <div class="footer__navs_list">
+                            <ul>
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#">Цены</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отследить груз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__navs_item">
+                        <h5>
+                            О компании
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18221 4.97355C3.48603 4.66974 3.97861 4.66974 4.28242 4.97356L6.99991 7.69106L9.71742 4.97355C10.0212 4.66974 10.5138 4.66974 10.8176 4.97355C11.1214 5.27737 11.1214 5.76995 10.8176 6.07377L7.55001 9.34138C7.2462 9.6452 6.75361 9.6452 6.4498 9.34138L3.18221 6.07376C2.87839 5.76995 2.87839 5.27737 3.18221 4.97355Z" fill="#929C91"/>
+                            </svg>
+                        </h5>
+                        <div class="footer__navs_list">
+                            <ul>
+                                <li>
+                                    <a href="#">Сотрудники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__navs_item">
+                        <h5>
+                            Мы предлагаем
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18221 4.97355C3.48603 4.66974 3.97861 4.66974 4.28242 4.97356L6.99991 7.69106L9.71742 4.97355C10.0212 4.66974 10.5138 4.66974 10.8176 4.97355C11.1214 5.27737 11.1214 5.76995 10.8176 6.07377L7.55001 9.34138C7.2462 9.6452 6.75361 9.6452 6.4498 9.34138L3.18221 6.07376C2.87839 5.76995 2.87839 5.27737 3.18221 4.97355Z" fill="#929C91"/>
+                            </svg>
+                        </h5>
+                        <div class="footer__navs_list">
+                            <ul>
+                                <li>
+                                    <a href="#">Домашний переезд</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд с грузчиками</a>
+                                </li>
+                                <li>
+                                    <a href="#">Переезды для военнослужащих</a>
+                                </li>
+                                <li>
+                                    <a href="#">Офисные переезды</a>
+                                </li>
+                                <li>
+                                    <a href="#">Корпоративный переезд сотрудников</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Москву</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Санкт-Петербург </a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Краснодар</a>
+                                </li>
+                                <li>
+                                    <a href="#">Переезд в Беларусь</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Калининград</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_container">
+                <div class="footer__bottom">
+                    <span>2024 © С Переездом!</span>
+                    <span>Политика конфиденциальности</span>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    
+    <!-- iMask JS -->
+    <script src="https://unpkg.com/imask"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
