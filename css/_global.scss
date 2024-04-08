@@ -1,0 +1,68 @@
+// colors
+
+// For text
+$color-text-black: #1A1E19;       // Черный текст
+$color-text-gray: #8B958B;        // Серый текст
+$color-text-nonworking: #C2CDC1;  // Нерабочий текст
+$color-text-white: #FFFFFF;       // Белый текст
+$color-text-lightgreen: #6FBB40;  // Светло-зеленый текст
+$color-text-green: #58A727;       // Зеленый текст
+$color-text-darkgreen: #418417;   // Темно-зеленый текст
+$color-text-orange: #E97719;      // Оранжевый текст
+$color-text-purple: #675FA7;      // Фиолетовый текст
+$color-text-error: #D65050;       // Ошибка
+$color-text-errorgreen: #BC3E3E;  // Ошибка на зеленом
+
+// For background
+$color-bg-lightgreen: #E5F8DA;    // Светло-зеленый фон
+$color-bg-green: #6FBB40;         // Зеленый фон
+$color-bg-lightorange: #FDE4CF;   // Светло-оранжевый фон
+$color-bg-orange: #F58D38;        // Оранжевый фон
+$color-bg-purple: #675FA7;        // Фиолетовый фон
+$color-bg-lightpurple: #E6E4FB;   // Светло-фиолетовый фон
+$color-bg-mdgray: #EDEDED;        // Средне-серый фон
+$color-bg-gray: #F2F2F2;          // Серый фон
+$color-bg-lightgray: #F7F7F7;     // Светло-серый фон
+$color-bg-white: #FFFFFF;         // Белый фон, Нерабочий белый фон
+
+// Gradient
+// Зеленый градиент
+$color-gradient-green: linear-gradient(139.18deg, rgb(123, 202, 74) -1.426%,rgb(103, 179, 56) 101.585%);
+// Темно-зеленый градиент
+$color-gradient-darkgreen: linear-gradient(139.18deg, rgb(104, 182, 56) -1.426%,rgb(86, 159, 41) 101.585%);
+// Оранжевый градиент
+$color-gradient-orange: linear-gradient(130.98deg, rgb(255, 150, 64) -15.625%,rgb(237, 114, 25) 113.399%);
+// Темно-оранжевый градиент
+$color-gradient-darkorange: linear-gradient(130.98deg, rgb(235, 133, 50) -15.625%,rgb(219, 98, 11) 113.399%);
+
+// Icon color
+$color-icon-white: #FFFFFF;       // Белые иконки
+$color-icon-green: #6FBB40;       // Зеленые иконки
+$color-icon-gray: #929C91;        // Серые иконки
+$color-icon-black: #1A1E19;       // Черные иконки
+$color-icon-nonworking: #D5D8D5;  // Нерабочие
+
+// Border color
+$color-border-gray: #DEDEDE;        // Серый бордер
+$color-border-mdgray: #AEB3AE;      // Средне-серый бордер
+$color-border-darkgray: #757D75;    // Темно-серый бордер
+$color-border-white: #FFFFFF;       // Белый бордер, Белый 50% бордер, Белый 80% бордер
+$color-border-lightgreen: #C3E7AC;  // Светло-зеленый бордер
+$color-border-green: #6FBB40;       // Зеленый бордер
+$color-border-lightorange: #F0CCAE; // Светло-оранжевый бордер
+$color-border-lightpurple: #D4D0FA; // Светло- фиолетовый бордер
+$color-border-error: #D65050;       // Ошибка
+$color-border-errorgreen: #BC3E3E;  // Ошибка на зеленом
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}

@@ -575,533 +575,325 @@
 
         <main>
 
-        <!-- Hero -->
-        <section class="hero">
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs">
             <div class="main_container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Переезды <br> по <span>России</span> и <span>СНГ</span></h1>
-                    <p class="hero__description">Поможем переехать в другой регион с комфортом <br> и сохранностью вещей по договору</p>
-                    <div class="hero__btns">
-                        <a href="#" class="btn_green">
-                            <img src="./images/icons/hearo__calculator.svg" alt="">
-                            <span>Рассчитать стоимость</span>
-                        </a>
-                        <a href="#" class="btn_orange request_modal__open">Заказать звонок</a>
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                    </li>
+                    <li>
+                        <span class="active">Наши услуги</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Breadcrumbs end -->
+
+        <!-- Services home -->
+        <section class="services_home">
+            <div class="main_container">
+                <h1 class="services_home__title">Наши услуги</h1>
+                <p class="services_home__description">Компания «С Переездом!» организует междугородные переезды отдельным транспортом, «от двери до двери», по всей России и за её пределы. Если Вам необходимо осуществить квартирный, офисный или корпоративный переезд, то именно у нас вы найдете лучшие цены и надежный сервис!</p>
+            </div>
+        </section>
+        <!-- Services home end -->
+
+        <!-- Services card -->
+        <section class="services_card">
+            <div class="main_container">
+                <h2 class="services_card__title">Самые популярные</h2>
+                <div class="services_card__swiper_wrap">
+                    <div class="services_card__btn">
+                        <button class="services_card__btn_prev">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                        <button class="services_card__btn_next">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
                     </div>
-                    <img src="./images/hero__car.png" alt="" class="hero__car">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper services_card__wrap">
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_1.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Домашний переезд</h3>
+                                <p>Транспортная компания «С Переездом!» возьмет на себя заботу о вашем домашнем переезде и поможет во всех вопросах.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_2.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Квартирный переезд с грузчиками</h3>
+                                <p>Чтобы сохранить свое время и нервы, стоит доверить свой квартирный переезд профессионалам — компании «С Переездом!».</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_3.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Переезд военнослужащих</h3>
+                                <p>Мы организуем переезды военнослужащих по всем регионам России, а также в Белоруссию, Казахстан, Абхазию и Цхинвал.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_4.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Офисные переезды</h3>
+                                <p>Мы предлагаем вам быструю и надежную грузоперевозку в минимальные срокис гарантией сохранности офисного имущества.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_5.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Переезды с компенсацией</h3>
+                                <p>Компенсацию могут производить государственные, муниципальные структуры, военные части и компании-работодатели.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_6.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Организация переезда в Москву</h3>
+                                <p>По статистике, одним из самых популярных направлений для переезда на ПМЖ является Москва и Московская область.</p>
+                            </li>
+            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Hero end -->
+        <!-- Services card end -->
 
-        <!-- Offer -->
-        <section class="offer">
+        <!-- Services card -->
+        <section class="services_card">
             <div class="main_container">
-                <h2 class="offer__title">Что мы предлагаем?</h2>
-                <div class="swiper">
-                    <ul class="swiper-wrapper offer__card">
-    
-                        <li class="swiper-slide card_service offer__card_item">
-                            <div class="card_service__head">
-                                <img src="./images/service_card_1.png" alt="">
-                            </div>
-                            <h3>Домашний переезд</h3>
-                            <p>Транспортная компания «С Переездом!» возьмет на себя заботу о вашем домашнем переезде и поможет во всех вопросах.</p>
-                            <div class="card_service__btns">
-                                <a href="#" class="btn_gray">Подробнее</a>
-                                <div class="card_service__btns_right">
-                                    <img src="./images/icons/card_service__icon.svg" alt="">
-                                    <span class="card_service__btns_right__text">
-                                        <span>7985</span>
-                                        переездов
-                                    </span>
+                <h2 class="services_card__title">По типам</h2>
+                <div class="services_card__swiper_wrap">
+                    <div class="services_card__btn">
+                        <button class="services_card__btn_prev">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                        <button class="services_card__btn_next">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper services_card__wrap">
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_1.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
                                 </div>
-                            </div>
-                        </li>
-    
-                        <li class="swiper-slide card_service offer__card_item">
-                            <div class="card_service__head">
-                                <img src="./images/service_card_2.png" alt="">
-                            </div>
-                            <h3>Квартирный переезд с грузчиками</h3>
-                            <p>Чтобы сохранить свое время и нервы, стоит доверить свой квартирный переезд профессионалам — компании «С Переездом!».</p>
-                            <div class="card_service__btns">
-                                <a href="#" class="btn_gray">Подробнее</a>
-                                <div class="card_service__btns_right">
-                                    <img src="./images/icons/card_service__icon.svg" alt="">
-                                    <span class="card_service__btns_right__text">
-                                        <span>10263</span>
-                                        переездов
-                                    </span>
+                                <h3>Домашний переезд</h3>
+                                <p>Транспортная компания «С Переездом!» возьмет на себя заботу о вашем домашнем переезде и поможет во всех вопросах.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_2.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
                                 </div>
-                            </div>
-                        </li>
-    
-                        <li class="swiper-slide card_service offer__card_item">
-                            <div class="card_service__head">
-                                <img src="./images/service_card_3.png" alt="">
-                            </div>
-                            <h3>Переезд военнослужащих</h3>
-                            <p>Мы организуем переезды военнослужащих по всем регионам России, а также в Белоруссию, Казахстан, Абхазию и Цхинвал.</p>
-                            <div class="card_service__btns">
-                                <a href="#" class="btn_gray">Подробнее</a>
-                                <div class="card_service__btns_right">
-                                    <img src="./images/icons/card_service__icon.svg" alt="">
-                                    <span class="card_service__btns_right__text">
-                                        <span>3427</span>
-                                        переездов
-                                    </span>
+                                <h3>Квартирный переезд с грузчиками</h3>
+                                <p>Чтобы сохранить свое время и нервы, стоит доверить свой квартирный переезд профессионалам — компании «С Переездом!».</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_3.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
                                 </div>
-                            </div>
-                        </li>
-    
-                        <li class="swiper-slide card_service offer__card_item">
-                            <div class="card_service__head">
-                                <img src="./images/service_card_4.png" alt="">
-                            </div>
-                            <h3>Офисные переезды</h3>
-                            <p>Мы предлагаем вам быструю и надежную грузоперевозку в минимальные срокис гарантией сохранности офисного имущества.</p>
-                            <div class="card_service__btns">
-                                <a href="#" class="btn_gray">Подробнее</a>
-                                <div class="card_service__btns_right">
-                                    <img src="./images/icons/card_service__icon.svg" alt="">
-                                    <span class="card_service__btns_right__text">
-                                        <span>456</span>
-                                        переездов
-                                    </span>
+                                <h3>Переезд военнослужащих</h3>
+                                <p>Мы организуем переезды военнослужащих по всем регионам России, а также в Белоруссию, Казахстан, Абхазию и Цхинвал.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_4.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
                                 </div>
-                            </div>
-                        </li>
-    
-                        <li class="swiper-slide card_service offer__card_item">
-                            <div class="card_service__head">
-                                <img src="./images/service_card_5.png" alt="">
-                            </div>
-                            <h3>Переезды с компенсацией</h3>
-                            <p>Компенсацию могут производить государственные, муниципальные структуры, военные части и компании-работодатели.</p>
-                            <div class="card_service__btns">
-                                <a href="#" class="btn_gray">Подробнее</a>
-                                <div class="card_service__btns_right">
-                                    <img src="./images/icons/card_service__icon.svg" alt="">
-                                    <span class="card_service__btns_right__text">
-                                        <span>1684</span>
-                                        переездов
-                                    </span>
+                                <h3>Офисные переезды</h3>
+                                <p>Мы предлагаем вам быструю и надежную грузоперевозку в минимальные срокис гарантией сохранности офисного имущества.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_5.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
                                 </div>
-                            </div>
-                        </li>
-    
-                        <li class="swiper-slide card_service offer__card_item">
-                            <div class="card_service__head">
-                                <img src="./images/service_card_6.png" alt="">
-                            </div>
-                            <h3>Организация переезда в Москву</h3>
-                            <p>По статистике, одним из самых популярных направлений для переезда на ПМЖ является Москва и Московская область.</p>
-                            <div class="card_service__btns">
-                                <a href="#" class="btn_gray">Подробнее</a>
-                                <div class="card_service__btns_right">
-                                    <img src="./images/icons/card_service__icon.svg" alt="">
-                                    <span class="card_service__btns_right__text">
-                                        <span>5732</span>
-                                        переездов
-                                    </span>
+                                <h3>Переезды с компенсацией</h3>
+                                <p>Компенсацию могут производить государственные, муниципальные структуры, военные части и компании-работодатели.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_6.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
                                 </div>
-                            </div>
-                        </li>
-    
-                    </ul>
+                                <h3>Организация переезда в Москву</h3>
+                                <p>По статистике, одним из самых популярных направлений для переезда на ПМЖ является Москва и Московская область.</p>
+                            </li>
+            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Offer end -->
+        <!-- Services card end -->
 
-        <!-- Our advantage -->
-        <section class="advantage">
-            <div class="main_container advantage__container">
-                <div class="advantage__left">
-                    <h2 class="advantage__left_title">Наши преимущества</h2>
-                    <ul>
-                        <li>
-                            <img src="./images/icons/advantage_left_icon_1.svg" alt="">
-                            <p>Максимальная скорость <br> доставки</p>
-                        </li>
-                        <li>
-                            <img src="./images/icons/advantage_left_icon_2.svg" alt="">
-                            <p>Онлайн-отслеживание <br> груза</p>
-                        </li>
-                        <li>
-                            <img src="./images/icons/advantage_left_icon_3.svg" alt="">
-                            <p>Любые <br> формы оплаты</p>
-                        </li>
-                        <li>
-                            <img src="./images/icons/advantage_left_icon_4.svg" alt="">
-                            <p>Бережная <br> транспортировка</p>
-                        </li>
-                    </ul>
+        <!-- Services card -->
+        <section class="services_card">
+            <div class="main_container">
+                <h2 class="services_card__title">По городам и странам</h2>
+                <div class="services_card__swiper_wrap">
+                    <div class="services_card__btn">
+                        <button class="services_card__btn_prev">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                        <button class="services_card__btn_next">
+                            <img src="./images/icons/slider_btn_icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper services_card__wrap">
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_1.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Домашний переезд</h3>
+                                <p>Транспортная компания «С Переездом!» возьмет на себя заботу о вашем домашнем переезде и поможет во всех вопросах.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_2.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Квартирный переезд с грузчиками</h3>
+                                <p>Чтобы сохранить свое время и нервы, стоит доверить свой квартирный переезд профессионалам — компании «С Переездом!».</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_3.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Переезд военнослужащих</h3>
+                                <p>Мы организуем переезды военнослужащих по всем регионам России, а также в Белоруссию, Казахстан, Абхазию и Цхинвал.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_4.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Офисные переезды</h3>
+                                <p>Мы предлагаем вам быструю и надежную грузоперевозку в минимальные срокис гарантией сохранности офисного имущества.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_5.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Переезды с компенсацией</h3>
+                                <p>Компенсацию могут производить государственные, муниципальные структуры, военные части и компании-работодатели.</p>
+                            </li>
+            
+                            <li class="swiper-slide card_service services_card__item">
+                                <div class="card_service__head">
+                                    <img src="./images/service_card_6.png" alt="">
+                                    <a href="#" class="btn_gray">Подробнее</a>
+                                </div>
+                                <h3>Организация переезда в Москву</h3>
+                                <p>По статистике, одним из самых популярных направлений для переезда на ПМЖ является Москва и Московская область.</p>
+                            </li>
+            
+                        </ul>
+                    </div>
                 </div>
-                <div class="advantage__right">
-                    <h2 class="advantage__right_title">Персональный менеджер всегда готов помочь!</h2>
-                    <img src="./images/advantage_person.png" alt="" class="advantage__right_person">
-                    <img src="./images/icons/clock.png" alt="" class="advantage__right_clock">
+            </div>
+        </section>
+        <!-- Services card end -->
+
+        <!-- Your calls -->
+        <section class="your_calls">
+            <div class="main_container your_calls__container">
+                <div class="your_calls__left">
+                    <h2 class="your_calls__title">Ждем ваших звонков!</h2>
+                    <div class="your_calls__links">
+                        <a href="#">
+                            <img src="./images/icons/phone.svg" alt="">
+                            <span>8 (800) 301-47-978</span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/mb_phone.svg" alt="">
+                            <span>8 (969) 777-83-97</span>
+                        </a>
+                        <p>Ежедневно c 8:00 до 21:00</p>
+                    </div>
                     <div class="btns">
                         <a href="#" class="btn_green">
-                            <img src="./images/icons/telegram_icon.svg" alt="">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.4995 11.9998C22.4994 12.1855 22.4476 12.3674 22.35 12.5253C22.2523 12.6832 22.1126 12.8108 21.9465 12.8938L3.94651 21.8938C3.77759 21.9781 3.58825 22.0128 3.40041 21.994C3.21257 21.9752 3.03389 21.9036 2.88503 21.7875C2.73618 21.6713 2.62323 21.5155 2.55926 21.3379C2.49528 21.1602 2.48289 20.9682 2.52351 20.7838L4.47551 11.9998L2.52351 3.21679C2.48265 3.03236 2.49487 2.84012 2.55874 2.66235C2.62262 2.48457 2.73554 2.32852 2.88444 2.21227C3.03334 2.09602 3.21212 2.02432 3.40008 2.00548C3.58804 1.98663 3.7775 2.02141 3.94651 2.10579L21.9465 11.1058C22.1126 11.1888 22.2523 11.3164 22.35 11.4743C22.4476 11.6322 22.4994 11.8141 22.4995 11.9998ZM6.30151 12.9998L4.93151 19.1658L17.2635 12.9998L6.30151 12.9998ZM17.2635 10.9998L4.93151 4.83379L6.30151 10.9998L17.2635 10.9998Z" fill="white"/>
+                            </svg>
                             <span>Заявка на переезд</span>
                         </a>
                         <a href="#" class="btn_orange">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2040_3366)">
-                                <path d="M11.1107 5.8171C10.9607 5.40867 10.66 5.07313 10.2705 4.8793C9.88094 4.68547 9.43199 4.64804 9.01572 4.77469C7.04244 5.3831 5.66338 7.07651 5.95947 9.03559C6.29062 11.2099 7.02741 13.3027 8.1315 15.2049C9.22377 17.1027 10.6557 18.7835 12.3559 20.1634C13.885 21.4005 16.0307 21.0598 17.5436 19.6402C17.8618 19.3415 18.0549 18.9332 18.0839 18.4977C18.1129 18.0622 17.9756 17.632 17.6998 17.2938L16.6168 15.9694C16.3999 15.7031 16.108 15.5082 15.7789 15.4098C15.4498 15.3114 15.0988 15.3142 14.7713 15.4178L12.2727 16.2088L11.8367 15.7585C11.2873 15.1887 10.8068 14.5564 10.4049 13.8745C10.0149 13.1849 9.71112 12.45 9.50042 11.6862L9.3321 11.088L11.2587 9.31343C11.513 9.07738 11.6913 8.77109 11.7711 8.43347C11.8509 8.09584 11.8286 7.74212 11.7069 7.41722L11.1107 5.8171ZM8.41948 2.83589C9.33038 2.55719 10.3134 2.63741 11.167 3.06009C12.0207 3.48278 12.6804 4.21593 13.011 5.10932L13.6052 6.70741C13.8673 7.4095 13.9147 8.1737 13.7414 8.90281C13.568 9.63192 13.1818 10.293 12.6317 10.802L11.638 11.7167C11.7657 12.0695 11.9381 12.4731 12.1612 12.8645C12.3843 13.2499 12.6439 13.6007 12.8812 13.8867L14.1588 13.481C14.8731 13.2555 15.6387 13.2496 16.3564 13.464C17.0741 13.6784 17.7109 14.1033 18.1845 14.6837L19.2674 16.008C19.8693 16.744 20.1693 17.681 20.1068 18.6297C20.0443 19.5784 19.624 20.4679 18.9308 21.1186C16.9149 23.0108 13.6234 23.7956 11.0823 21.7392C9.1888 20.2031 7.59393 18.3319 6.37725 16.2189C5.14552 14.0972 4.32342 11.763 3.95375 9.33777C3.46702 6.10711 5.78506 3.64711 8.41948 2.83792" fill="white"/>
+                                <g clip-path="url(#clip0_2040_271)">
+                                    <path d="M11.1107 5.96603C10.9607 5.5576 10.66 5.22206 10.2705 5.02823C9.88094 4.83439 9.43199 4.79697 9.01572 4.92362C7.04244 5.53203 5.66338 7.22544 5.95947 9.18452C6.29062 11.3589 7.02741 13.4516 8.1315 15.3538C9.22377 17.2516 10.6557 18.9324 12.3559 20.3123C13.885 21.5494 16.0307 21.2087 17.5436 19.7891C17.8618 19.4904 18.0549 19.0821 18.0839 18.6467C18.1129 18.2112 17.9756 17.7809 17.6998 17.4427L16.6168 16.1184C16.3999 15.8521 16.108 15.6571 15.7789 15.5587C15.4498 15.4604 15.0988 15.4632 14.7713 15.5667L12.2727 16.3577L11.8367 15.9075C11.2873 15.3377 10.8068 14.7053 10.4049 14.0234C10.0149 13.3338 9.71112 12.5989 9.50042 11.8352L9.3321 11.2369L11.2587 9.46236C11.513 9.2263 11.6913 8.92001 11.7711 8.58239C11.8509 8.24477 11.8286 7.89105 11.7069 7.56615L11.1107 5.96603ZM8.41948 2.98482C9.33038 2.70612 10.3134 2.78633 11.167 3.20902C12.0207 3.6317 12.6804 4.36485 13.011 5.25824L13.6052 6.85634C13.8673 7.55843 13.9147 8.32262 13.7414 9.05173C13.568 9.78084 13.1818 10.4419 12.6317 10.9509L11.638 11.8656C11.7657 12.2185 11.9381 12.622 12.1612 13.0134C12.3843 13.3988 12.6439 13.7496 12.8812 14.0356L14.1588 13.63C14.8731 13.4045 15.6387 13.3985 16.3564 13.6129C17.0741 13.8273 17.7109 14.2522 18.1845 14.8326L19.2674 16.1569C19.8693 16.8929 20.1693 17.8299 20.1068 18.7786C20.0443 19.7273 19.624 20.6169 18.9308 21.2675C16.9149 23.1597 13.6234 23.9446 11.0823 21.8881C9.1888 20.352 7.59393 18.4808 6.37725 16.3678C5.14552 14.2462 4.32342 11.912 3.95375 9.4867C3.46702 6.25604 5.78506 3.79603 8.41948 2.98685" fill="white"/>
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_2040_3366">
-                                <rect width="17.2591" height="23.0122" fill="white" transform="translate(3.3703 1.30542)"/>
-                                </clipPath>
+                                    <clipPath id="clip0_2040_271">
+                                        <rect width="17.2591" height="23.0122" fill="white" transform="translate(3.37036 1.45435)"/>
+                                    </clipPath>
                                 </defs>
                             </svg>
                         </a>
                     </div>
+                    <img src="./images/your_calls_car.png" class="your_calls__left_car" alt="">
+                </div>
+                <div class="your_calls__right">
+                    <ul>
+                        <li>
+                            <b><span>3</span>65</b>
+                            <p>дней в году <br> работаем для вас</p>
+                        </li>
+                        <li>
+                            <b><span>3</span>82</b>
+                            <p>переезда <br> в месяц</p>
+                        </li>
+                        <li>
+                            <b><span>1</span>117</b>
+                            <p>городов России</p>
+                        </li>
+                        <li>
+                            <b><span>6</span>000</b>
+                            <p>довольных семей</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <!-- Our advantage end -->
-
-        <!-- Working -->
-        <section class="working">
-            <div class="main_container">
-                <h2 class="working__title">Как мы работаем</h2>
-                <div class="working__content">
-                    <div class="working__content_left">
-                        <ul>
-                            <li>
-                                <span>
-                                    1
-                                    <img src="./images/icons/boder-rounded.png" alt="">
-                                </span>
-                                <p>Вы оставляете заявку на сайте</p>
-                            </li>
-                            <li>
-                                <span>
-                                    2
-                                    <img src="./images/icons/boder-rounded.png" alt="">
-                                </span>
-                                <p>С вами связывается менеджер и называет точную стоимость</p>
-                            </li>
-                            <li>
-                                <span>
-                                    3
-                                    <img src="./images/icons/boder-rounded.png" alt="">
-                                </span>
-                                <p>Заключаем договор на перевозку</p>
-                            </li>
-                            <li>
-                                <span>
-                                    4
-                                    <img src="./images/icons/boder-rounded.png" alt="">
-                                </span>
-                                <p>После мы осуществляем сам переезд</p>
-                            </li>
-                            <li>
-                                <span>
-                                    5
-                                    <img src="./images/icons/boder-rounded.png" alt="">
-                                </span>
-                                <p>Получаем ваш благодарный отзыв</p>
-                            </li>
-                            <li>
-                                <span>6</span>
-                                <p>При получении груза вами производится оплата</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="working__content_right">
-                        <iframe width="750" height="402" src="https://www.youtube.com/embed/ckFIeWsbTsg" title="Skyscraper Construction Animation - Rendirect" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Working end -->
-
-        <!-- Tarif -->
-        <section class="tarif">
-            <div class="main_container">
-                <div class="tarif__content">
-                    <div class="tarif__head">
-                        <h2 class="tarif__title">Наши тарифы</h2>
-                        <a href="#" class="btn_white city_modal__open">
-                            <img src="./images/icons/tarif_edit_icon.svg" alt="">
-                            <span>Изменить  город отправления</span>
-                        </a>
-                    </div>
-                    <div class="tarif__table_wrap">
-                        <div class="tarif__table">
-                            <div class="tarif__table_head">
-                                <h3 class="tarif__table_head__left">
-                                    <span>Откуда:</span>
-                                    Петропавловск-Камчатский
-                                    <a href="#">
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21 12.0478C20.7348 12.0478 20.4804 12.1531 20.2929 12.3407C20.1054 12.5282 20 12.7826 20 13.0478V19.0478C20 19.313 19.8946 19.5674 19.7071 19.7549C19.5196 19.9424 19.2652 20.0478 19 20.0478H5C4.73478 20.0478 4.48043 19.9424 4.29289 19.7549C4.10536 19.5674 4 19.313 4 19.0478V5.04779C4 4.78257 4.10536 4.52822 4.29289 4.34068C4.48043 4.15315 4.73478 4.04779 5 4.04779H11C11.2652 4.04779 11.5196 3.94243 11.7071 3.7549C11.8946 3.56736 12 3.31301 12 3.04779C12 2.78257 11.8946 2.52822 11.7071 2.34068C11.5196 2.15315 11.2652 2.04779 11 2.04779H5C4.20435 2.04779 3.44129 2.36386 2.87868 2.92647C2.31607 3.48908 2 4.25214 2 5.04779V19.0478C2 19.8434 2.31607 20.6065 2.87868 21.1691C3.44129 21.7317 4.20435 22.0478 5 22.0478H19C19.7956 22.0478 20.5587 21.7317 21.1213 21.1691C21.6839 20.6065 22 19.8434 22 19.0478V13.0478C22 12.7826 21.8946 12.5282 21.7071 12.3407C21.5196 12.1531 21.2652 12.0478 21 12.0478ZM6 12.8078V17.0478C6 17.313 6.10536 17.5674 6.29289 17.7549C6.48043 17.9424 6.73478 18.0478 7 18.0478H11.24C11.3716 18.0486 11.5021 18.0233 11.6239 17.9736C11.7457 17.9238 11.8566 17.8505 11.95 17.7578L18.87 10.8278L21.71 8.04779C21.8037 7.95483 21.8781 7.84423 21.9289 7.72237C21.9797 7.60051 22.0058 7.4698 22.0058 7.33779C22.0058 7.20578 21.9797 7.07507 21.9289 6.95321C21.8781 6.83135 21.8037 6.72075 21.71 6.62779L17.47 2.33779C17.377 2.24406 17.2664 2.16967 17.1446 2.1189C17.0227 2.06813 16.892 2.04199 16.76 2.04199C16.628 2.04199 16.4973 2.06813 16.3754 2.1189C16.2536 2.16967 16.143 2.24406 16.05 2.33779L13.23 5.16779L6.29 12.0978C6.19732 12.1912 6.12399 12.302 6.07423 12.4239C6.02446 12.5457 5.99924 12.6762 6 12.8078ZM16.76 4.45779L19.59 7.28779L18.17 8.70779L15.34 5.87779L16.76 4.45779ZM8 13.2178L13.93 7.28779L16.76 10.1178L10.83 16.0478H8V13.2178Z" fill="#6FBB40"/>
-                                        </svg>
-                                    </a>
-                                </h3>
-                                <ul class="tarif__table_head__right">
-                                    <li>
-                                        <span>1-комнатная <br> квартира</span>
-                                        <span class="sm">1-комн. кв.</span>
-                                    </li>
-                                    <li>
-                                        <span>2-комнатная <br> квартира</span>
-                                        <span class="sm">2-комн. кв.</span>
-                                    </li>
-                                    <li>
-                                        <span>3-комнатная <br> квартира</span>
-                                        <span class="sm">3-комн. <br> кв.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tarif__table_body">
-                                <div class="tarif__table_body__item">
-                                    <span class="subtitle">Куда:</span>
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Москва</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Абакан</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Азов</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Астрахань</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Адыгея</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                                <div class="tarif__table_body__item">
-                                    <h3 class="tarif__table_body__left">
-                                        <img src="./images/icons/header__location.svg" alt="">
-                                        <span>Санкт-Петербург</span>
-                                        <img src="./images/icons/chevron-right.svg" alt="">
-                                    </h3>
-                                    <ul class="tarif__table_body__right">
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                        <li>000 000 ₽</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Tarif end -->
-
-        <!-- Order -->
-        <section class="order">
-            <div class="main_container">
-                <div class="order__content">
-                    <h2 class="order__title">Закажите переезд <br> прямо сейчас!</h2>
-                    <form action="" class="order__form">
-
-                        <!-- Use classes ['error', 'disabled']. example: class="input error" --> 
-                        <div class="input">
-                            <input type="text">
-                            <label>Ваше имя</label>
-                            <p class="input_error">Описание ошибки тут</p>
-                        </div>
-
-                        <!-- Use classes ['error', 'disabled']. example: class="input phone error" --> 
-                        <div class="input phone">
-                            <input type="tel">
-                            <label>Ваш номер телефона</label>
-                            <p class="input_error">Описание ошибки тут</p>
-                        </div>
-
-                        <!-- Use classes ['error', 'disabled']. example: class="checkbox error" -->
-                        <label for="" class="checkbox">
-                            <input type="checkbox" placeholder="">
-                            <span class="checkbox_icon">
-                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.872803 4.20585L3.32691 6.66001C3.40501 6.73812 3.53165 6.73812 3.60975 6.66001L9.19547 1.07422" stroke="#6FBB40" stroke-width="1.3" stroke-linecap="round"/>
-                                </svg>                                    
-                            </span>
-                            <span class="checkbox_text">Даю согласие на обработку персональных данных</span>
-                        </label>
-
-                        <button type="submit" class="btn_white">Заказать переезд</button>
-                    </form>
-
-                    <img src="./images/order__person.png" alt="" class="order__person">
-                </div>
-            </div>
-        </section>
-        <!-- Order end -->
+        <!-- Your calls end -->
 
         <!-- Review -->
         <section class="review">
@@ -1454,44 +1246,6 @@
             </div>
         </section>
         <!-- Review end -->
-
-        <!-- More description -->
-        <section class="more_desc">
-            <div class="main_container more_desc__container">
-                <p>При переезде в новую квартиру или офис важно иметь хорошую организацию и надежную помощь. Компания «С Переездом!», специализирующаяся на переездах с профессиональными грузчиками в Москву, предоставляет услуги, которые обеспечивают комфорт, безопасность и надежность клиентов. В этой статье мы рассмотрим преимущества сотрудничества , услуги, предоставляемые нашей компанией, и обсудим вопросы стоимости и качества выполненных работ.</p>
-
-                <div class="more_desc__content">
-                    <h2 class="more_desc__title">Переезд в Москву: удобство и эффективность</h2>
-                    <ul>
-                        <li>
-                            <p>Эта услуга предоставляет целый ряд преимуществ по сравнению с самостоятельным переносом мебели и вещей. Опытные специалисты обладают необходимыми навыками и знаниями для безопасной и эффективной транспортировки груза. Они знают, как организовать безопасную упаковку мебели и оптимально распределить груз в транспортном средстве.</p>
-                        </li>
-                        <li>
-                            <p>Мы предлагаем полный спектр услуг, связанных с переездом в Москву. Мы осуществляем перевозку и доставку груза по области и в другие города России. Мы оказываем помощь как в квартирных переездах, так и в перемещениях в загородные дома и офисные помещения.</p>
-                        </li>
-                        <li>
-                            <p>Процесс переезда включает в себя несколько этапов. Сначала наши специалисты прибывают на место, где проводится погрузка. Они аккуратно и профессионально упаковывают вещи, используя материалы для упаковки высокого качества. Затем они эффективно загружают груз в транспортное средство и груз доставляется в пункт назначения, где наши специалисты осуществляют разгрузку и расстановку вещей по указанию клиента.</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="more_desc__content">
-                    <h2 class="more_desc__title">Надежность и безопасность</h2>
-                    <p>Одним из наиболее важных факторов при выборе компании является ее надежность и безопасность. Мы гарантируем сохранность мебели и личных вещей клиентов благодаря использованию надежных материалов для упаковки и аккуратной транспортировке груза. Грузчики имеют богатый опыт работы и знают, как обращаться с мебелью и ценными вещами. Мы также обеспечиваем страхование перевозки, что позволяет клиентам быть уверенными в сохранности своего имущества.</p>
-                </div>
-
-                <div class="more_desc__content">
-                    <h2 class="more_desc__title">Цена переезда в Москву</h2>
-                    <p>Ценовая политика нашей компании прозрачна и дает клиентам возможность сопоставить цену и качество предлагаемых услуг. Мы предлагаем индивидуальный расчет стоимости услуг, исходя из объема груза, расстояния переезда и сложности работ. Это позволяет клиентам выбрать наиболее оптимальное предложение и избежать непредвиденных расходов.</p>
-                </div>
-
-                <div class="more_desc__content">
-                    <h2 class="more_desc__title">Заключение</h2>
-                    <p>Переезд – это серьезное и ответственное мероприятие, требующее профессиональной организации и подхода. Компания «С Переездом!» предоставляет свои услуги по переезду в Москву, гарантируя безопасность, надежность и качество. Благодаря опытным грузчикам, профессиональной упаковке и транспортировке груза, клиенты могут быть уверены в сохранности своего имущества. Мы предлагаем прозрачную ценовую политику и гибкую систему скидок, что делает ее недорогим и надежным выбором.</p>
-                </div>
-            </div>
-        </section>
-        <!-- More description end -->
 
         </main>
 
