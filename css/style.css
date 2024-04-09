@@ -1823,6 +1823,7 @@ label {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 .review__item_stars {
   display: flex;
