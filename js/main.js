@@ -18,7 +18,8 @@ let checkbox = document.querySelectorAll('.checkbox'),
     request_modal_open = document.querySelectorAll('.request_modal__open'),
     thanks_modal = document.querySelector('.thanks_modal'),
     thanks_modal_open = document.querySelectorAll('.thanks_modal__open'),
-    services_card = document.querySelectorAll('.services_card');
+    services_card = document.querySelectorAll('.services_card'),
+    fixed_bottom = document.querySelector('.fixed_bottom');
 
 if (services_card.length) {
     services_card.forEach(el => {
@@ -178,62 +179,50 @@ if (review_slider) {
     })
 }
 
+
 if (review__item.length) {
     review__item.forEach((review, review_ID) => {
         let p = review.querySelector('.review__item_description p'),
             btn = review.querySelector('.review__item_show'),
             p_wrap = review.querySelector('.review__item_description');
 
-        let str = p.textContent;
-        let putMaxLength = () => {
-            let maxLength = 560;
-
-            if (window.innerWidth > 1240 && window.innerWidth < 1300) {
-                maxLength = 540;
-            } else if (window.innerWidth > 1200 &&  window.innerWidth < 1240) {
-                maxLength = 520;
-            } else if (window.innerWidth > 1090 &&  window.innerWidth <= 1200) {
-                maxLength = 750;
-            } else if (window.innerWidth > 960 &&  window.innerWidth <= 1090) {
-                maxLength = 650;
-            } else if (window.innerWidth > 930 &&  window.innerWidth <= 960) {
-                maxLength = 610;
-            } else if (window.innerWidth > 850 &&  window.innerWidth <= 930) {
-                maxLength = 570;
-            } else if (window.innerWidth <= 850) {
-                maxLength = 550;
+        if (p) {
+            let str = p.textContent;
+            let putMaxLength = () => {
+                let maxLength = 560;
+    
+                if (window.innerWidth > 1240 && window.innerWidth < 1300) {
+                    maxLength = 540;
+                } else if (window.innerWidth > 1200 &&  window.innerWidth < 1240) {
+                    maxLength = 520;
+                } else if (window.innerWidth > 1090 &&  window.innerWidth <= 1200) {
+                    maxLength = 750;
+                } else if (window.innerWidth > 960 &&  window.innerWidth <= 1090) {
+                    maxLength = 650;
+                } else if (window.innerWidth > 930 &&  window.innerWidth <= 960) {
+                    maxLength = 610;
+                } else if (window.innerWidth > 850 &&  window.innerWidth <= 930) {
+                    maxLength = 570;
+                } else if (window.innerWidth <= 850) {
+                    maxLength = 550;
+                }
+    
+                if (str.length > maxLength && !p_wrap.classList.contains('active')) {
+                    let strLeft = str.substring(0, maxLength / 2);
+                    let strWithEllipsis = strLeft + '... ';
+                    p.textContent = strWithEllipsis;
+                }
             }
-
-            if (str.length > maxLength && !p_wrap.classList.contains('active')) {
-                let strLeft = str.substring(0, maxLength / 2);
-                let strWithEllipsis = strLeft + '... ';
-                p.textContent = strWithEllipsis;
-            }
-        }
-
-        putMaxLength();
-
-        window.addEventListener('resize', function () {
+    
             putMaxLength();
-        })
-
-        btn.onclick = () => {
-            p_wrap.classList.add('active');
-            p.textContent = str;
-        }
-
-        review.onclick = e => {
-            if (e.target != btn) {
-
-                review__item.forEach((rev, rev_ID) => {
-                    yandex = rev.querySelector('.review__item_yandex');
-
-                    if (rev_ID == review_ID) {
-                        yandex.classList.add('active')
-                    } else {
-                        yandex.classList.remove('active')
-                    }
-                })
+    
+            window.addEventListener('resize', function () {
+                putMaxLength();
+            })
+    
+            btn.onclick = () => {
+                p_wrap.classList.add('active');
+                p.textContent = str;
             }
         }
     })
@@ -278,7 +267,9 @@ function headerPosition() {
 
     if (scrollY >= 620) {
         header.classList.add('active');
+        fixed_bottom.classList.add('active')
     } else {
+        fixed_bottom.classList.remove('active')
         if (header.classList.contains('active')) {
             header.classList.remove('active');
             header.classList.add('end-active');
