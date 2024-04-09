@@ -4250,6 +4250,7 @@ label {
 
     @include media(992) {
         margin-bottom: 50px;
+        padding-top: 94px;
     }
 
     &__title {
@@ -4304,3 +4305,139 @@ label {
     }
 }
 // Articles end
+
+// Article home
+.article_home {
+    margin-bottom: 80px;
+
+    @include media (992) {
+        margin-bottom: 50px;
+        padding-top: 94px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+
+        @include media (992) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .main_img {
+        margin-bottom: 40px;
+        border-radius: 10px;
+        width: 100%;
+
+        @include media (992) {
+            margin-bottom: 30px;
+        }
+
+        @include media (576) {
+            height: 185px;
+            object-fit: cover;
+        }
+    }
+
+    &__descriptions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+
+        @include media (992) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__advice {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 80px;
+        margin-bottom: 50px;
+
+        @include media (992) {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            width: 100%;
+
+            @include media (992) {
+                padding-bottom: 5px;
+            }
+        }
+
+        ul {
+            width: calc(50% - 40px);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include media (992) {
+                width: 100%;
+                gap: 15px;
+            }
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            p {
+                color: #929C91;
+            }
+
+            h4 {
+                margin-bottom: 5px;
+                
+                &:nth-child(2) {
+                    margin-bottom: 10px;
+
+                    @include media (992) {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+
+        @include media (1200) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        img {
+            border-radius: 10px;
+
+            @include media (1200) {
+                height: 400px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            @include media (768) {
+                height: 300px;
+            }
+
+            @include media (576) {
+                height: 185px;
+            }
+        }
+
+        &_description {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            gap: 20px;
+        }
+    }
+}
+// Article home end
