@@ -15,9 +15,13 @@ let checkbox = document.querySelectorAll('.checkbox'),
     city_modal = document.querySelector('.city_modal'),
     modal_close = document.querySelectorAll('.modal__close'),
     request_modal = document.querySelector('.request_modal'),
+    feedback_modal = document.querySelector('.feedback_modal'),
     request_modal_open = document.querySelectorAll('.request_modal__open'),
+    feedback_modal_open = document.querySelectorAll('.feedback_modal__open'),
     thanks_modal = document.querySelector('.thanks_modal'),
+    thanks_modal_2 = document.querySelector('.thanks_modal_2'),
     thanks_modal_open = document.querySelectorAll('.thanks_modal__open'),
+    thanks_modal_2_open = document.querySelectorAll('.thanks_modal_2__open'),
     services_card = document.querySelectorAll('.services_card'),
     fixed_bottom = document.querySelector('.fixed_bottom');
 
@@ -61,11 +65,27 @@ thanks_modal_open.forEach(el => {
     }
 })
 
+thanks_modal_2_open.forEach(el => {
+    el.onclick = e => {
+        e.preventDefault();
+        modalClose();
+        thanks_modal_2.classList.add('active');
+    }
+})
+
 request_modal_open.forEach(el => {
     el.onclick = e => {
         e.preventDefault();
         modalClose();
         request_modal.classList.add('active');
+    }
+})
+
+feedback_modal_open.forEach(el => {
+    el.onclick = e => {
+        e.preventDefault();
+        modalClose();
+        feedback_modal.classList.add('active');
     }
 })
 
@@ -278,6 +298,98 @@ if (articles_card_more) {
 
 if (articles_cards.length) {
     sortArticlesCard();
+}
+
+let review_card__descriptions = document.querySelectorAll('.review_card__descriptions');
+let review_more_btn = document.querySelector('.review_card_more');
+let reviewText = [];
+let sortLength = 3;
+
+// if (review_card__descriptions.length) {
+//     review_card__descriptions.forEach((el, idx) => {
+//         el.querySelectorAll('p br').forEach(br => br.remove());
+//         let btn = el.querySelector('button');
+//         reviewText.push(el.querySelector('p').textContent);
+//         btn.onclick = () => {
+//             el.classList.add('active')
+//             e.querySelector('p').textContent = reviewText[idx];
+//         }
+//     })
+// }
+
+function sortReviewCard () {
+    document.querySelectorAll('.review_card').forEach((el, idx) => {
+        if (sortLength <= idx) {
+            el.classList.add('hidden');
+        } else {
+            el.classList.remove('hidden');
+        }
+    })
+}
+
+if (review_more_btn) {
+    sortReviewCard();
+    
+    review_more_btn.onclick = () => {
+        sortLength += 3;
+        sortReviewCard();
+    }
+}
+
+if (review_card__descriptions) {
+    review_card__descriptions.forEach((el, idx) => {
+        
+        let p = el.querySelector('p'),
+            btn = el.querySelector('button'),
+            p_wrap = el.querySelector('.review__item_description');
+
+        let str = p.textContent;
+        let putMaxLength = (w) => {
+            if (w <= 992) {
+                let maxLength = 240;
+
+                if (w >= 396 && w <= 431) {
+                    maxLength = 270;
+                } else if (w > 431 && w <= 487) {
+                    maxLength = 310;
+                } else if (w > 487 && w <= 538) {
+                    maxLength = 350;
+                } else if (w > 538 && w <= 582) {
+                    maxLength = 400;
+                } else if (w > 582 && w <= 660) {
+                    maxLength = 450
+                } else if (w > 660 && w <= 760) {
+                    maxLength = 520;
+                } else if (w > 760 && w <= 887) {
+                    maxLength = 615;
+                } else if (w > 887) {
+                    maxLength = 710;
+                }
+    
+                if (str.length > maxLength && !el.classList.contains('active')) {
+                    p.textContent = str.slice(0, maxLength) + '... ';
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+
+            } else {
+                p.textContent = str;
+            }
+        }
+
+        putMaxLength(window.innerWidth);
+
+        window.addEventListener('resize', function () {
+            putMaxLength(this.window.innerWidth);
+        })
+
+        btn.onclick = () => {
+            el.classList.add('active');
+            btn.classList.remove('active');
+            p.textContent = str;
+        }
+    })
 }
 
 window.addEventListener('resize', function () {
