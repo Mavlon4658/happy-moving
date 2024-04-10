@@ -267,6 +267,54 @@ function swiperCard1() {
     }
 }
 
+let init2 = false;
+let offerSwiper2;
+let chief_swiper = document.querySelector('.employee_home .chief .swiper')
+
+function swiperCard2() {
+    let w = this.window.innerWidth;
+    if (w <= 992) {
+        if (!init2) {
+            init2 = true;
+            offerSwiper2 = new Swiper(chief_swiper, {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+            });
+        }
+    } else if (init2) {
+        offerSwiper2.destroy();
+        init2 = false;
+    }
+}
+
+let init3 = false;
+let offerSwiper3;
+let manager_swiper = document.querySelector('.employee_home .manager .swiper')
+
+function swiperCard3() {
+    let w = this.window.innerWidth;
+    if (w <= 992) {
+        if (!init3) {
+            init3 = true;
+            offerSwiper3 = new Swiper(manager_swiper, {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+            });
+        }
+    } else if (init3) {
+        offerSwiper3.destroy();
+        init3 = false;
+    }
+}
+
+if (chief_swiper) {
+    swiperCard2();
+}
+
+if (manager_swiper) {
+    swiperCard3();
+}
+
 if (offer_swiper) {
     swiperCard1();
 }
@@ -383,6 +431,14 @@ if (review_card__descriptions) {
 window.addEventListener('resize', function () {
     if (offer_swiper) {
         swiperCard1();
+    }
+
+    if (chief_swiper) {
+        swiperCard2();
+    }
+
+    if (manager_swiper) {
+        swiperCard3();
     }
 
     if (this.window.innerWidth <= 992) {
