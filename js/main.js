@@ -305,18 +305,6 @@ let review_more_btn = document.querySelector('.review_card_more');
 let reviewText = [];
 let sortLength = 3;
 
-// if (review_card__descriptions.length) {
-//     review_card__descriptions.forEach((el, idx) => {
-//         el.querySelectorAll('p br').forEach(br => br.remove());
-//         let btn = el.querySelector('button');
-//         reviewText.push(el.querySelector('p').textContent);
-//         btn.onclick = () => {
-//             el.classList.add('active')
-//             e.querySelector('p').textContent = reviewText[idx];
-//         }
-//     })
-// }
-
 function sortReviewCard () {
     document.querySelectorAll('.review_card').forEach((el, idx) => {
         if (sortLength <= idx) {
@@ -476,3 +464,19 @@ document.addEventListener('click', event => {
         header_scroll_nav.style.maxHeight = null
     }
 })
+
+let price_more_btn = document.querySelector('.price_home__more_btn');
+let price_more_data = document.querySelector('.price_home__more')
+
+if (price_more_data) {
+    price_more_btn.onclick = () => {
+        price_more_data.classList.toggle('active');
+        let t = price_more_btn.textContent;
+
+        if (t == 'Читать далее') {
+            price_more_btn.textContent = 'Скрыть';
+        } else {
+            price_more_btn.textContent = 'Читать далее';
+        }
+    }
+}
