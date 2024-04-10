@@ -5247,4 +5247,100 @@ label {
   .employee_home .manager .swiper-wrapper .swiper-slide {
     width: 324px;
   }
+}
+
+@media screen and (max-width: 992px) {
+  .document_home {
+    padding-top: 94px;
+  }
+}
+.document_home__description {
+  margin: 20px 0 40px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__description {
+    margin-bottom: 30px;
+  }
+}
+.document_home__card {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card {
+    margin-bottom: 30px;
+  }
+}
+.document_home__card:last-child {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card:last-child {
+    margin-bottom: 50px;
+  }
+}
+.document_home__card h2 {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card h2 {
+    margin-bottom: 20px;
+  }
+}
+.document_home__card .document_card {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card .document_card {
+    flex-direction: column;
+  }
+}
+.document_home__card .document_card__item {
+  width: calc(50% - 10px);
+  background: #F7F7F7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  gap: 20px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card .document_card__item {
+    width: 100%;
+    padding: 12px 16px;
+  }
+}
+.document_home__card .document_card__item:hover {
+  background: #E5F8DA;
+}
+.document_home__card .document_card__item:focus {
+  outline: 3px solid #DEDEDE;
+}
+.document_home__card .document_card__item_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card .document_card__item_left img {
+    width: 24px;
+  }
+}
+.document_home__card .document_card__item_text {
+  display: flex;
+  flex-direction: column;
+}
+.document_home__card .document_card__item_text h4 {
+  color: #6FBB40;
+}
+.document_home__card .document_card__item a {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 992px) {
+  .document_home__card .document_card__item a img {
+    width: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
