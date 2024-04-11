@@ -6177,82 +6177,83 @@ label {
         }
     }
 
-    .wait_call {
-        background: $color-bg-lightgray;
-        border-radius: 10px;
-        padding: 60px;
-        position: relative;
-        z-index: 1;
+}
+
+.wait_call {
+    background: $color-bg-lightgray;
+    border-radius: 10px;
+    padding: 60px;
+    position: relative;
+    z-index: 1;
+
+    @include media (992) {
+        padding: 30px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        
+        @include media (992) {
+            text-align: center;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 21.5px 30px;
+        padding-top: 11.5px;
+        width: 504px;
+
+        @include media (993) {
+            width: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        
+        &_wrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            
+            @include media (992) {
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+            }
+        }
+
+        a {
+            width: calc(50% - 15px);
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: $color-text-black;
+            font-size: 22px;
+            font-weight: bold;
+
+            @include media (992) {
+                white-space: nowrap;
+                font-size: 20px;
+                gap: 6px;
+            }
+        }
+    }
+
+    .btn_orange {
+        width: 255px;
+        padding: 0;
+    }
+
+    &__box {
+        position: absolute;
+        right: -87.5px;
+        bottom: -59.14px;
+        z-index: -1;
 
         @include media (992) {
-            padding: 30px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            
-            @include media (992) {
-                text-align: center;
-            }
-        }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 21.5px 30px;
-            padding-top: 11.5px;
-            width: 504px;
-
-            @include media (993) {
-                width: auto;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-            }
-            
-            &_wrap {
-                display: flex;
-                align-items: flex-start;
-                gap: 40px;
-                
-                @include media (992) {
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 25px;
-                }
-            }
-
-            a {
-                width: calc(50% - 15px);
-                display: flex;
-                align-items: center;
-                gap: 7px;
-                color: $color-text-black;
-                font-size: 22px;
-                font-weight: bold;
-
-                @include media (992) {
-                    white-space: nowrap;
-                    font-size: 20px;
-                    gap: 6px;
-                }
-            }
-        }
-
-        .btn_orange {
-            width: 255px;
-            padding: 0;
-        }
-
-        &__box {
-            position: absolute;
-            right: -87.5px;
-            bottom: -59.14px;
-            z-index: -1;
-
-            @include media (992) {
-                display: none;
-            }
+            display: none;
         }
     }
 }
@@ -6474,3 +6475,156 @@ label {
     }
 }
 // Company customer end
+
+// Cargo tracking
+.cargo_tracking {
+    margin-bottom: 80px;
+
+    @include media (992) {
+        margin-bottom: 50px;
+        padding-top: 94px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .map_field {
+        width: 100%;
+        border-radius: 10px;
+        height: 492px;
+        object-fit: cover;
+        overflow: hidden;
+        margin-top: 40px;
+
+        @include media (992) {
+            height: 345px;
+        }
+    }
+
+    &__descriptions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 40px;
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            @include media (992) {
+                align-items: flex-start;
+            }
+        }
+    }
+}
+// Cargo tracking end
+
+// Calculator wait call
+.calculator_wait_call {
+    margin-bottom: 80px;
+
+    @include media (992) {
+        margin-bottom: 50px;
+    }
+}
+// Calculator wait call end
+
+// Error page
+.error_page {
+    margin-bottom: 80px;
+    
+    @include media (992) {
+        padding-top: 94px;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        @include media (992) {
+            text-align: center;
+        }
+    }
+
+    .main_description {
+        margin: 20px 0 40px;
+
+        @include media (992) {
+            display: none;
+        }
+
+        &.sm {
+            display: none;
+
+            @include media (992) {
+                display: block;
+                margin: 0 0 40px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media (992) {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 404px;
+            background: $color-gradient-green;
+            font-weight: bold;
+            line-height: 115%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+            position: relative;
+
+            @include media (1200) {
+                font-size: 220px;
+            }
+
+            @include media (992) {
+                margin-bottom: 20px;
+            }
+
+            @include media (576) {
+                font-size: 174px;
+            }
+
+            img {
+                position: absolute;
+                bottom: -35px;
+                right: 78px;
+
+                @include media (1200) {
+                    height: 200px;
+                    bottom: -50px;
+                    right: 11px;
+                }
+
+                @include media (576) {
+                    height: 132px;
+                    bottom: -19px;
+                    right: 20px;
+                }
+            }
+        }
+
+        .btn_green {
+            padding: 0 72px;
+            position: relative;
+
+            @include media (576) {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+// Error page end
