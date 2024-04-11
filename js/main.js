@@ -14,6 +14,7 @@ let checkbox = document.querySelectorAll('.checkbox'),
     modals = document.querySelectorAll('.modal'),
     city_modal = document.querySelector('.city_modal'),
     modal_close = document.querySelectorAll('.modal__close'),
+    modal_bg = document.querySelectorAll('.modal__bg'),
     request_modal = document.querySelector('.request_modal'),
     feedback_modal = document.querySelector('.feedback_modal'),
     request_modal_open = document.querySelectorAll('.request_modal__open'),
@@ -55,7 +56,11 @@ modal_close.forEach(btn => {
     }
 })
 
-
+modal_bg.forEach(el => {
+    el.onclick = () => {
+        modalClose();
+    }
+})
 
 thanks_modal_open.forEach(el => {
     el.onclick = e => {
@@ -536,3 +541,18 @@ if (price_more_data) {
         }
     }
 }
+
+let company = new Swiper('.company_employees .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
+    },
+    navigation: {
+        nextEl: '.company_employees .swiper_btn_next',
+        prevEl: '.company_employees .swiper_btn_prev',
+    }
+});
