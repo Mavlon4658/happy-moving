@@ -138,6 +138,9 @@ if (inputs.length) {
     inputs.forEach(inp => {
         let i = inp.querySelector('input');
         let l = inp.querySelector('label');
+        let select = inp.querySelector('.select_list')
+        let select_btn = inp.querySelectorAll('.select_list button');
+        let icon = document.querySelector('.icon');
 
         const checkInputVal = () => {
             if (i.value.length) {
@@ -155,10 +158,17 @@ if (inputs.length) {
 
         i.onfocus = () => {
             l.classList.add('active');
+            inp.classList.add('active');
+            
+            if (select) {
+                select.classList.add('active');
+                icon.classList.add('active');
+            }
         }
-
+        
         i.onblur = () => {
             checkInputVal();
+            inp.classList.remove('active');
         }
 
         if (inp.classList.contains('phone')) {
@@ -177,6 +187,24 @@ if (inputs.length) {
                     t = true;
                 }
             }
+        }
+
+        if (select_btn.length) {
+            select_btn.forEach(btn => {
+                btn.onclick = () => {
+                    i.value = btn.textContent;
+                    select.classList.remove('active');
+                    icon.classList.remove('active');
+
+                    select_btn.forEach(el => {
+                        if (btn == el) {
+                            el.classList.add('active');
+                        } else {
+                            el.classList.remove('active');
+                        }
+                    })
+                }
+            })
         }
     })
 }
