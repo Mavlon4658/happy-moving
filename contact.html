@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С переездом!</title>
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- City select modal -->
+        <section class="modal city_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="city_modal__head">
+                    <h3>
+                        Выберите город:
+                    </h3>
+                    <button class="modal__close">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="19.3839" height="2" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.6462 4.93945)" fill="#929C91"/>
+                            <rect x="6.354" y="4.93994" width="19.3839" height="2" rx="1" transform="rotate(45 6.354 4.93994)" fill="#929C91"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="city_modal__search">
+                    <input type="text" placeholder="Введите название города...">
+                    <button>
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3943 18.7384L17.3769 15.7454C18.5481 14.285 19.1153 12.4313 18.9619 10.5655C18.8084 8.69978 17.9459 6.96373 16.5518 5.71435C15.1576 4.46497 13.3377 3.79724 11.4664 3.84844C9.59501 3.89965 7.81438 4.66591 6.49064 5.98966C5.16689 7.31341 4.40063 9.09403 4.34942 10.9654C4.29821 12.8368 4.96595 14.6566 6.21533 16.0508C7.4647 17.4449 9.20076 18.3074 11.0665 18.4609C12.9323 18.6144 14.7859 18.0471 16.2463 16.8759L19.2394 19.8689C19.315 19.9451 19.4049 20.0056 19.504 20.0469C19.6032 20.0882 19.7095 20.1095 19.8168 20.1095C19.9242 20.1095 20.0305 20.0882 20.1296 20.0469C20.2287 20.0056 20.3187 19.9451 20.3943 19.8689C20.5409 19.7173 20.6228 19.5146 20.6228 19.3037C20.6228 19.0927 20.5409 18.8901 20.3943 18.7384ZM11.6836 16.8759C10.5576 16.8759 9.45684 16.542 8.52058 15.9164C7.58433 15.2908 6.85461 14.4016 6.4237 13.3613C5.99279 12.321 5.88004 11.1763 6.09972 10.0719C6.3194 8.96753 6.86163 7.95309 7.65785 7.15687C8.45406 6.36065 9.46851 5.81842 10.5729 5.59874C11.6773 5.37907 12.822 5.49181 13.8623 5.92272C14.9026 6.35363 15.7918 7.08335 16.4174 8.01961C17.043 8.95586 17.3769 10.0566 17.3769 11.1826C17.3769 12.6926 16.777 14.1407 15.7093 15.2084C14.6416 16.2761 13.1935 16.8759 11.6836 16.8759Z" fill="#929C91"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="city_modal__search_result">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn_gray active">Москва</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Петропавловск-Камчатский</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Петропавловск-Камчатский</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Петропавловск-Камчатский</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Санкт-Петербург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Новосибирск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Краснодар</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Ростов-на-Дону</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_gray">Челябинск</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="modal request_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h3>Отправить заявку</h3>
+                <button class="modal__close">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.3839" height="2" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.6462 4.93945)" fill="#929C91"/>
+                        <rect x="6.354" y="4.93994" width="19.3839" height="2" rx="1" transform="rotate(45 6.354 4.93994)" fill="#929C91"/>
+                    </svg>
+                </button>
+                <p>Наши специалисты свяжутся с Вами <br> в ближайшее время.</p>
+                <form action="">
+
+                    <!-- Use classes ['error', 'disabled']. example: class="input error" --> 
+                    <div class="input white">
+                        <input type="text">
+                        <label>Ваше имя</label>
+                        <p class="input_error">Описание ошибки тут</p>
+                    </div>
+
+                    <!-- Use classes ['error', 'disabled']. example: class="input phone error" --> 
+                    <div class="input white phone">
+                        <input type="tel">
+                        <label>Ваш номер телефона</label>
+                        <p class="input_error">Описание ошибки тут</p>
+                    </div>
+
+                    <!-- Use classes ['error', 'disabled']. example: class="checkbox error" -->
+                    <label for="" class="checkbox white">
+                        <input type="checkbox" checked placeholder="">
+                        <span class="checkbox_icon">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.872803 4.20585L3.32691 6.66001C3.40501 6.73812 3.53165 6.73812 3.60975 6.66001L9.19547 1.07422" stroke="#6FBB40" stroke-width="1.3" stroke-linecap="round"/>
+                            </svg>                                    
+                        </span>
+                        <span class="checkbox_text">Даю согласие на обработку персональных данных</span>
+                    </label>
+
+                    <button type="submit" class="btn_green thanks_modal__open">Заказать переезд</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="modal thanks_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h3>Спасибо за вашу заявку!</h3>
+                <button class="modal__close thanks_modal__close">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="19.3839" height="2" rx="1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.6462 4.93945)" fill="#929C91"/>
+                        <rect x="6.354" y="4.93994" width="19.3839" height="2" rx="1" transform="rotate(45 6.354 4.93994)" fill="#929C91"/>
+                    </svg>
+                </button>
+                <p>Наши специалисты свяжутся с Вами <br> в ближайшее время. (либо тут, либо в <br> отправить заявку нужен другой текст)</p>
+                <button class="btn_green modal__close">Закрыть</button>
+            </div>
+        </section>
+
+        <section class="modal is_city_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h3>Ваш город — <br> Петропавловск-Камчатский?!</h3>
+                <div class="btns">
+                    <button class="btn_green">Да</button>
+                    <button class="btn_gray">Нет, другой</button>
+                </div>
+            </div>
+        </section>
+        <!-- City select modal end -->
+
+        <!-- header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <a href="#" class="header__address">
+                        <img src="./images/icons/header__location.svg" alt="">
+                        <span>Петропавловск- <br> Камчатский</span>
+                    </a>
+                </div>
+
+                <ul class="header__nav">
+                    <li class="header__nav_accordion">
+                        <a href="#" class="header__nav_accordion__btn">
+                            Услуги
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5927 6.19279C4.98323 5.80227 5.61639 5.80227 6.00691 6.1928L9.49997 9.68588L12.9931 6.1928C13.3836 5.80227 14.0167 5.80227 14.4073 6.1928C14.7978 6.58332 14.7978 7.21648 14.4073 7.60701L10.2071 11.8072C9.81655 12.1977 9.18338 12.1977 8.79286 11.8072L4.5927 7.60701C4.20217 7.21648 4.20217 6.58332 4.5927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <div class="header__nav_accordion__list">
+                            <ul>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Цены</a>
+                    </li>
+                    <li class="header__nav_accordion">
+                        <a href="#" class="header__nav_accordion__btn">
+                            О компании
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5927 6.19279C4.98323 5.80227 5.61639 5.80227 6.00691 6.1928L9.49997 9.68588L12.9931 6.1928C13.3836 5.80227 14.0167 5.80227 14.4073 6.1928C14.7978 6.58332 14.7978 7.21648 14.4073 7.60701L10.2071 11.8072C9.81655 12.1977 9.18338 12.1977 8.79286 11.8072L4.5927 7.60701C4.20217 7.21648 4.20217 6.58332 4.5927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <div class="header__nav_accordion__list">
+                            <ul>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Отследить груз</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="header__right">
+                    <a href="#">8 (800) 301-47-978</a>
+                    <a href="#">
+                        <img src="./images/icons/header__phone.svg" alt="">
+                        <span>8 (800) 301-47-978</span>
+                    </a>
+                    <div class="work_schedule">Ежедневно c 8:00 до 21:00</div>
+                </div>
+
+                <div class="header__scroll">
+                    <div class="header__scroll_left">
+                        <a href="#">
+                            <img src="./images/icons/phone.svg" alt="">
+                            <span>8 (800) 301-47-978</span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/mb_phone.svg" alt="">
+                            <span>8 (969) 777-83-97</span>
+                        </a>
+                    </div>
+                    <div class="header__scroll_right">
+                        <a href="#" class="btn_green">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00562 7C7.00562 5.89543 7.90105 5 9.00562 5H16.0056C17.1102 5 18.0056 5.89543 18.0056 7V9C18.0056 10.1046 17.1102 11 16.0056 11H9.00562C7.90105 11 7.00562 10.1046 7.00562 9V7ZM9.00562 7H16.0056V9H9.00562V7Z" fill="white"/>
+                                <path d="M9.00562 14C9.00562 14.5523 8.5579 15 8.00562 15C7.45333 15 7.00562 14.5523 7.00562 14C7.00562 13.4477 7.45333 13 8.00562 13C8.5579 13 9.00562 13.4477 9.00562 14Z" fill="white"/>
+                                <path d="M8.00562 19C8.5579 19 9.00562 18.5523 9.00562 18C9.00562 17.4477 8.5579 17 8.00562 17C7.45333 17 7.00562 17.4477 7.00562 18C7.00562 18.5523 7.45333 19 8.00562 19Z" fill="white"/>
+                                <path d="M13.5056 14C13.5056 14.5523 13.0579 15 12.5056 15C11.9533 15 11.5056 14.5523 11.5056 14C11.5056 13.4477 11.9533 13 12.5056 13C13.0579 13 13.5056 13.4477 13.5056 14Z" fill="white"/>
+                                <path d="M12.5056 19C13.0579 19 13.5056 18.5523 13.5056 18C13.5056 17.4477 13.0579 17 12.5056 17C11.9533 17 11.5056 17.4477 11.5056 18C11.5056 18.5523 11.9533 19 12.5056 19Z" fill="white"/>
+                                <path d="M18.0056 14C18.0056 14.5523 17.5579 15 17.0056 15C16.4533 15 16.0056 14.5523 16.0056 14C16.0056 13.4477 16.4533 13 17.0056 13C17.5579 13 18.0056 13.4477 18.0056 14Z" fill="white"/>
+                                <path d="M17.0056 19C17.5579 19 18.0056 18.5523 18.0056 18C18.0056 17.4477 17.5579 17 17.0056 17C16.4533 17 16.0056 17.4477 16.0056 18C16.0056 18.5523 16.4533 19 17.0056 19Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.00562 4C3.00562 2.34315 4.34876 1 6.00561 1H19.0056C20.6625 1 22.0056 2.34315 22.0056 4V20C22.0056 21.6569 20.6625 23 19.0056 23H6.00562C4.34876 23 3.00562 21.6569 3.00562 20V4ZM6.00561 3H19.0056C19.5579 3 20.0056 3.44772 20.0056 4V20C20.0056 20.5523 19.5579 21 19.0056 21H6.00562C5.45333 21 5.00562 20.5523 5.00562 20V4C5.00562 3.44772 5.45333 3 6.00561 3Z" fill="white"/>
+                            </svg>
+                            <span>Рассчитать стоимость</span>
+                        </a>
+                        <a href="#" class="btn_orange request_modal__open">Заказать звонок</a>
+                        <button class="btn_green header__bars">
+                            <img src="./images/icons/bars.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header__scroll_nav">
+                    <ul class="nav_parent">
+                        <li class="nav_accordion">
+                            <a href="#" class="nav_btn">
+                                <span>Услуги</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                                </svg>
+                            </a>
+                            <ul class="accordion_list">
+                                <li>
+                                    <a href="#">Сотрудники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li class="nav_accordion">
+                            <a href="#" class="nav_btn">
+                                <span>О компании</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                                </svg>
+                            </a>
+                            <ul class="accordion_list">
+                                <li>
+                                    <a href="#">Сотрудники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Отследить груз</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__mobile_nav">
+                    <a href="#" class="btn_orange">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2040_3869)">
+                                <path d="M11.1102 5.58492C10.9602 5.1765 10.6596 4.84095 10.27 4.64712C9.88045 4.45329 9.4315 4.41586 9.01523 4.54251C7.04196 5.15093 5.66289 6.84433 5.95899 8.80342C6.29013 10.9778 7.02692 13.0705 8.13101 14.9727C9.22329 16.8705 10.6552 18.5513 12.3554 19.9312C13.8845 21.1683 16.0302 20.8276 17.5431 19.408C17.8614 19.1093 18.0544 18.701 18.0834 18.2656C18.1124 17.8301 17.9751 17.3998 17.6993 17.0616L16.6163 15.7373C16.3994 15.471 16.1075 15.276 15.7784 15.1776C15.4493 15.0793 15.0983 15.0821 14.7708 15.1856L12.2723 15.9766L11.8362 15.5264C11.2868 14.9566 10.8063 14.3242 10.4044 13.6423C10.0144 12.9527 9.71063 12.2178 9.49993 11.4541L9.33161 10.8558L11.2582 9.08126C11.5125 8.8452 11.6908 8.53891 11.7706 8.20129C11.8504 7.86367 11.8281 7.50994 11.7064 7.18504L11.1102 5.58492ZM8.41899 2.60371C9.32989 2.32502 10.3129 2.40523 11.1666 2.82791C12.0202 3.2506 12.6799 3.98375 13.0105 4.87714L13.6047 6.47523C13.8668 7.17733 13.9142 7.94152 13.7409 8.67063C13.5675 9.39974 13.1813 10.0608 12.6312 10.5698L11.6375 11.4845C11.7652 11.8374 11.9376 12.2409 12.1607 12.6323C12.3838 13.0177 12.6434 13.3685 12.8807 13.6545L14.1583 13.2489C14.8726 13.0234 15.6382 13.0174 16.3559 13.2318C17.0736 13.4462 17.7104 13.8711 18.184 14.4515L19.2669 15.7758C19.8688 16.5118 20.1688 17.4488 20.1063 18.3975C20.0438 19.3462 19.6235 20.2358 18.9303 20.8864C16.9144 22.7786 13.6229 23.5635 11.0818 21.507C9.18831 19.9709 7.59344 18.0997 6.37676 15.9867C5.14503 13.8651 4.32294 11.5309 3.95326 9.10559C3.46653 5.87493 5.78458 3.41493 8.41899 2.60574" fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2040_3869">
+                                    <rect width="17.2591" height="23.0122" fill="white" transform="translate(3.36981 1.07324)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Позвонить</span>
+                    </a>
+                    <button class="btn_green mobile_menu_btn">
+                        <img src="./images/icons/bars.svg" alt="">
+                        <img src="./images/icons/menu_close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <section class="mobile_menu">
+            <div class="main_container">
+                <ul class="nav_parent">
+                    <li class="nav_accordion">
+                        <a href="#" class="nav_btn">
+                            <span>Услуги</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <ul class="accordion_list">
+                            <li>
+                                <a href="#">Сотрудники</a>
+                            </li>
+                            <li>
+                                <a href="#">Полезная информация</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Документы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Цены</a>
+                    </li>
+                    <li class="nav_accordion">
+                        <a href="#" class="nav_btn">
+                            <span>О компании</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.0927 6.19279C4.48323 5.80227 5.11639 5.80227 5.50691 6.1928L8.99997 9.68588L12.4931 6.1928C12.8836 5.80227 13.5167 5.80227 13.9073 6.1928C14.2978 6.58332 14.2978 7.21648 13.9073 7.60701L9.70708 11.8072C9.31655 12.1977 8.68338 12.1977 8.29286 11.8072L4.0927 7.60701C3.70217 7.21648 3.70217 6.58332 4.0927 6.19279Z" fill="#929C91"/>
+                            </svg>
+                        </a>
+                        <ul class="accordion_list">
+                            <li>
+                                <a href="#">Сотрудники</a>
+                            </li>
+                            <li>
+                                <a href="#">Полезная информация</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Документы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Отследить груз</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="line"></div>
+                <a href="#" class="select_country">
+                    <img src="./images/icons/header__location.svg" alt="">
+                    <span>
+                        Ваш город: <span>Петропавловск-Камчатский</span>
+                    </span>
+                    <img src="./images/icons/edit_green.svg" alt="">
+                </a>
+                <div class="line"></div>
+
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/phone.svg" alt="">
+                            <span>8 (800) 301-47-978</span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/mb_phone.svg" alt="">
+                            <span>8 (969) 777-83-97</span>
+                        </a>
+                        <h6>Ежедневно c 8:00 до 21:00</h6>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/address.svg" alt="">
+                            <span>Россия, 413100, Энгельс, ул. Демократическая, д.1, офис 201/1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/email.svg" alt="">
+                            <span>info@s-pereezdom.ru</span>
+                        </a>
+                    </li>
+                    <li class="networks">
+                        <a href="#">
+                            <img src="./images/icons/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/adno.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/tg.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/wb.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="btns">
+                        <a href="#" class="btn_green">Расчет стоимости</a>
+                        <a href="#" class="btn_gray">Заказать звонок</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- header -->
+
+        <main>
+
+            <!-- Breadcrumbs -->
+            <section class="breadcrumbs">
+                <div class="main_container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <span class="active">Контакты</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Breadcrumbs end -->
+
+            <!-- Contact home -->
+            <section class="contact_home">
+                <div class="main_container">
+                    <h1 class="contact_home__title">Контакты</h1>
+                    <p class="main_description">Наш головной офис находится в Энгельсе, но мы организуем перевозки из любого города России!</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/phone.svg" alt="">
+                                <span>8 (800) 301-47-978</span>
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/mb_phone.svg" alt="">
+                                <span>8 (969) 777-83-97</span>
+                            </a>
+                            <p class="main_description">Ежедневно c 8:00 до 21:00</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/email.svg" alt="">
+                                <span>info@s-pereezdom.ru</span>
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/email.svg" alt="">
+                                <span>zabota@s-pereezdom.ru</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/address.svg" alt="">
+                                <span>Россия, 413100, Энгельс, ул. <br> Демократическая, д.1, офис 201/1</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="write_us">
+                        <h2>Напишите нам</h2>
+                        <form class="write_us__form">
+                            <div class="inputs">
+                                <!-- Use classes ['error', 'disabled']. example: class="input error" --> 
+                                <div class="input">
+                                    <input type="text">
+                                    <label>Ваше имя</label>
+                                    <p class="input_error">Описание ошибки тут</p>
+                                </div>
+    
+                                <!-- Use classes ['error', 'disabled']. example: class="input phone error" --> 
+                                <div class="input phone">
+                                    <input type="tel">
+                                    <label>Ваш номер телефона</label>
+                                    <p class="input_error">Описание ошибки тут</p>
+                                </div>
+    
+                                <!-- Use classes ['error', 'disabled']. example: class="checkbox error" -->
+                                <label for="" class="checkbox">
+                                    <input type="checkbox" placeholder="">
+                                    <span class="checkbox_icon">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.872803 4.20585L3.32691 6.66001C3.40501 6.73812 3.53165 6.73812 3.60975 6.66001L9.19547 1.07422" stroke="#6FBB40" stroke-width="1.3" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </span>
+                                    <span class="checkbox_text">Даю согласие на обработку персональных данных</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn_white">Заказать переезд</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact home end -->
+
+            <!-- Contact map -->
+            <section class="contact_map">
+                <div class="main_container contact_map__container">
+                    <div class="contact_map__left">
+                        <div class="contact_map__head">
+                            <h2>Реквизиты</h2>
+                            <button class="btn_gray">
+                                <img src="./images/icons/copy_Icon.svg" alt="">
+                                <span>Скопировать</span>
+                            </button>
+                        </div>
+                        <ul>
+                            <li>
+                                <p><b>Наименование:</b> ООО «С Переездом!»</p>
+                                <p><b>ИНН:</b> 6449095150</p>
+                                <p><b>КПП:</b> 644901001</p>
+                                <p><b>ОГРН:</b> 1196451020710</p>
+                            </li>
+                            <li>
+                                <b>Юридический адрес:</b>
+                                <p>413100, Саратовская область, г. Энгельс, ул. Демократическая, д.1, офис 201/1</p>
+                            </li>
+                            <li>
+                                <b>Почтовый адрес:</b>
+                                <p>413100, Саратовская область, г. Энгельс, ул. Демократическая, д.1, офис 201/1</p>
+                            </li>
+                            <li>
+                                <b>Телефоны:</b>
+                                <a href="#">
+                                    <img src="./images/icons/phone.svg" alt="">
+                                    <span>8 (800) 301-47-978</span>
+                                </a>
+                                <a href="#">
+                                    <img src="./images/icons/mb_phone.svg" alt="">
+                                    <span>8 (969) 777-83-97</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact_map__right">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6893b912f507839ce019a54892c0d971533adfca910665a1ca26a451e00c878d&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact map end -->
+
+        </main>
+
+        
+        <!-- footer -->
+        <footer class="footer">
+            <div class="main_container footer__container">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <ul>
+                        <li class="phone phone_1">
+                            <a href="#">
+                                <img src="./images/icons/phone.svg" alt="">
+                                <span>8 (800) 301-47-978</span>
+                            </a>
+                        </li>
+                        <li class="email">
+                            <a href="#">
+                                <img src="./images/icons/email.svg" alt="">
+                                <span>info@s-pereezdom.ru</span>
+                            </a>
+                        </li>
+                        <li class="phone phone_2">
+                            <a href="#">
+                                <img src="./images/icons/mb_phone.svg" alt="">
+                                <span>8 (969) 777-83-97</span>
+                            </a>
+                        </li>
+                        <li class="networks">
+                            <a href="#">
+                                <img src="./images/icons/vk.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/adno.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/tg.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./images/icons/wb.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="address">
+                            <a href="#">
+                                <img src="./images/icons/address.svg" alt="">
+                                <span>Россия, 413100, Энгельс, ул. Демократическая, д.1, офис 201/1</span>
+                            </a>
+                        </li>
+                        <li class="yandex">
+                            <div class="yandex_in">
+                                <img src="./images/logo/yandex.svg" alt="">
+                                <span class="stars">
+                                    <b>5.0</b>
+                                    <span>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.77016 1.10181C9.18609 0.474931 10.1066 0.474931 10.5225 1.10181L13.0546 4.91808C13.1943 5.12866 13.4052 5.28188 13.6486 5.34968L18.0606 6.57853C18.7853 6.78038 19.0697 7.65583 18.6021 8.24512L15.755 11.8325C15.5979 12.0305 15.5174 12.2784 15.5281 12.5309L15.7228 17.1066C15.7548 17.8583 15.0101 18.3993 14.3051 18.1366L10.0135 16.5375C9.77667 16.4493 9.51601 16.4493 9.2792 16.5375L4.98757 18.1366C4.28261 18.3993 3.5379 17.8583 3.56988 17.1066L3.76455 12.5309C3.77529 12.2784 3.69474 12.0305 3.53764 11.8325L0.690601 8.24512C0.222933 7.65583 0.507384 6.78038 1.23211 6.57853L5.64405 5.34968C5.8875 5.28188 6.09838 5.12866 6.2381 4.91808L8.77016 1.10181Z" fill="#F58D38"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__navs">
+                    <li class="footer__navs_item">
+                        <h5>
+                            Меню
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18221 4.97355C3.48603 4.66974 3.97861 4.66974 4.28242 4.97356L6.99991 7.69106L9.71742 4.97355C10.0212 4.66974 10.5138 4.66974 10.8176 4.97355C11.1214 5.27737 11.1214 5.76995 10.8176 6.07377L7.55001 9.34138C7.2462 9.6452 6.75361 9.6452 6.4498 9.34138L3.18221 6.07376C2.87839 5.76995 2.87839 5.27737 3.18221 4.97355Z" fill="#929C91"/>
+                            </svg>
+                        </h5>
+                        <div class="footer__navs_list">
+                            <ul>
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#">Цены</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отследить груз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__navs_item">
+                        <h5>
+                            О компании
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18221 4.97355C3.48603 4.66974 3.97861 4.66974 4.28242 4.97356L6.99991 7.69106L9.71742 4.97355C10.0212 4.66974 10.5138 4.66974 10.8176 4.97355C11.1214 5.27737 11.1214 5.76995 10.8176 6.07377L7.55001 9.34138C7.2462 9.6452 6.75361 9.6452 6.4498 9.34138L3.18221 6.07376C2.87839 5.76995 2.87839 5.27737 3.18221 4.97355Z" fill="#929C91"/>
+                            </svg>
+                        </h5>
+                        <div class="footer__navs_list">
+                            <ul>
+                                <li>
+                                    <a href="#">Сотрудники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Полезная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__navs_item">
+                        <h5>
+                            Мы предлагаем
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18221 4.97355C3.48603 4.66974 3.97861 4.66974 4.28242 4.97356L6.99991 7.69106L9.71742 4.97355C10.0212 4.66974 10.5138 4.66974 10.8176 4.97355C11.1214 5.27737 11.1214 5.76995 10.8176 6.07377L7.55001 9.34138C7.2462 9.6452 6.75361 9.6452 6.4498 9.34138L3.18221 6.07376C2.87839 5.76995 2.87839 5.27737 3.18221 4.97355Z" fill="#929C91"/>
+                            </svg>
+                        </h5>
+                        <div class="footer__navs_list">
+                            <ul>
+                                <li>
+                                    <a href="#">Домашний переезд</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд с грузчиками</a>
+                                </li>
+                                <li>
+                                    <a href="#">Переезды для военнослужащих</a>
+                                </li>
+                                <li>
+                                    <a href="#">Офисные переезды</a>
+                                </li>
+                                <li>
+                                    <a href="#">Корпоративный переезд сотрудников</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Москву</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Санкт-Петербург </a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Краснодар</a>
+                                </li>
+                                <li>
+                                    <a href="#">Переезд в Беларусь</a>
+                                </li>
+                                <li>
+                                    <a href="#">Квартирный переезд в Калининград</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_container">
+                <div class="footer__bottom">
+                    <span>2024 © С Переездом!</span>
+                    <span>Политика конфиденциальности</span>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <div class="fixed_bottom">
+            <a href="#" class="btn_green">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 7.44043C6.5 6.33586 7.39543 5.44043 8.5 5.44043H15.5C16.6046 5.44043 17.5 6.33586 17.5 7.44043V9.44043C17.5 10.545 16.6046 11.4404 15.5 11.4404H8.5C7.39543 11.4404 6.5 10.545 6.5 9.44043V7.44043ZM8.5 7.44043H15.5V9.44043H8.5V7.44043Z" fill="white"/>
+                    <path d="M8.5 14.4404C8.5 14.9927 8.05228 15.4404 7.5 15.4404C6.94772 15.4404 6.5 14.9927 6.5 14.4404C6.5 13.8881 6.94772 13.4404 7.5 13.4404C8.05228 13.4404 8.5 13.8881 8.5 14.4404Z" fill="white"/>
+                    <path d="M7.5 19.4404C8.05228 19.4404 8.5 18.9927 8.5 18.4404C8.5 17.8881 8.05228 17.4404 7.5 17.4404C6.94772 17.4404 6.5 17.8881 6.5 18.4404C6.5 18.9927 6.94772 19.4404 7.5 19.4404Z" fill="white"/>
+                    <path d="M13 14.4404C13 14.9927 12.5523 15.4404 12 15.4404C11.4477 15.4404 11 14.9927 11 14.4404C11 13.8881 11.4477 13.4404 12 13.4404C12.5523 13.4404 13 13.8881 13 14.4404Z" fill="white"/>
+                    <path d="M12 19.4404C12.5523 19.4404 13 18.9927 13 18.4404C13 17.8881 12.5523 17.4404 12 17.4404C11.4477 17.4404 11 17.8881 11 18.4404C11 18.9927 11.4477 19.4404 12 19.4404Z" fill="white"/>
+                    <path d="M17.5 14.4404C17.5 14.9927 17.0523 15.4404 16.5 15.4404C15.9477 15.4404 15.5 14.9927 15.5 14.4404C15.5 13.8881 15.9477 13.4404 16.5 13.4404C17.0523 13.4404 17.5 13.8881 17.5 14.4404Z" fill="white"/>
+                    <path d="M16.5 19.4404C17.0523 19.4404 17.5 18.9927 17.5 18.4404C17.5 17.8881 17.0523 17.4404 16.5 17.4404C15.9477 17.4404 15.5 17.8881 15.5 18.4404C15.5 18.9927 15.9477 19.4404 16.5 19.4404Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 4.44043C2.5 2.78358 3.84315 1.44043 5.5 1.44043H18.5C20.1569 1.44043 21.5 2.78358 21.5 4.44043V20.4404C21.5 22.0973 20.1569 23.4404 18.5 23.4404H5.5C3.84315 23.4404 2.5 22.0973 2.5 20.4404V4.44043ZM5.5 3.44043H18.5C19.0523 3.44043 19.5 3.88814 19.5 4.44043V20.4404C19.5 20.9927 19.0523 21.4404 18.5 21.4404H5.5C4.94772 21.4404 4.5 20.9927 4.5 20.4404V4.44043C4.5 3.88814 4.94772 3.44043 5.5 3.44043Z" fill="white"/>
+                </svg>
+                <span>Рассчитать стоимость переезда</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- iMask JS -->
+    <script src="https://unpkg.com/imask"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
