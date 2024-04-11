@@ -6096,6 +6096,7 @@ label {
   .error_page .main_description.sm {
     display: block;
     margin: 0 0 40px;
+    text-align: center;
   }
 }
 .error_page__content {
